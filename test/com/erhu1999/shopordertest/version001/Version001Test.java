@@ -60,10 +60,19 @@ public class Version001Test {
         Long addrId = 1L;
         // 提交订单的次数
         int submitCnt = 10;
+        int submitCnt = 100;
+        // 开始时间（毫秒）
+        long startTimeMillis = System.currentTimeMillis();
         for (int i = 0; i < submitCnt; i++) {
             // 调用提交订单的接口
             Version001.submitOrder(userId, goodsId, goodsCount, addrId);
         }
+        // 结束时间（毫秒）
+        long endTimeMillis = System.currentTimeMillis();
+        // 平均时间（毫秒）
+        long avgTimeMillis = (endTimeMillis - startTimeMillis) / submitCnt;
+        System.out.println("提交每个订单平均耗时的毫秒数：" + avgTimeMillis);
+        System.out.println("提交每秒钟可以提交的订单数：" + 1000 / avgTimeMillis);
         // 查询下单之后的商品信息
         goods = queryOneRow("select `stock`,`sales` from `Goods` as t where t.id=" + goodsId);
         // 下单之后的库存
