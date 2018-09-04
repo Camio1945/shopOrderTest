@@ -59,7 +59,6 @@ public class Version001Test {
         // 地址ID
         Long addrId = 1L;
         // 提交订单的次数
-        int submitCnt = 10;
         int submitCnt = 100;
         // 开始时间（毫秒）
         long startTimeMillis = System.currentTimeMillis();
