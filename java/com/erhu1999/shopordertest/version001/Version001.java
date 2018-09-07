@@ -34,17 +34,24 @@ public class Version001 {
      * @param addrId     地址ID
      */
     public static void submitOrder(Long userId, Long goodsId, int goodsCount, Long addrId) throws Exception {
+        // 1、查询用户
         Map<String, Object> user = JdbcUtil.queryOneRow("select `id`,`name` from `User` as t where t.id=" + userId);
+        // 2、查询商品
         Map<String, Object> goods = JdbcUtil.queryOneRow("select `id`,`name`,`price`,`stock`,`sales`,`isOn`,`firstImg` from `Goods` as t where t.id=" + goodsId);
+        // 3、查询地址
         Map<String, Object> addr = JdbcUtil.queryOneRow("select `id`,`userId`,`mobile`,`name`,`addr` from `Addr` as t where t.id=" + addrId);
+        // 4、检查相关的参数是否正确
         checkParam(userId, goodsId, goodsCount, addrId, user, goods, addr);
+        // 5、保存订单到数据库中，并返回订单ID
         long orderId = saveOrder(userId, goodsCount, user, goods, addr);
+        // 6、保存订单商品到数据库中
         saveOrderGoods(goodsId, goodsCount, goods, orderId);
-        updateGoods(goodsId, goodsCount);
+        // 7、更新商品的库存与销量
+        updateGoodsStockAndSales(goodsId, goodsCount);
     }
 
-    /** 更新商品 */
-    private static void updateGoods(Long goodsId, int goodsCount) throws SQLException {
+    /** 更新商品的库存与销量 */
+    private static void updateGoodsStockAndSales(Long goodsId, int goodsCount) throws SQLException {
         StringBuilder updateSqlBuilder = new StringBuilder("update `Goods` set `stock` = `stock` - ")
                 .append(goodsCount).append(" ").append(", `sales` = `sales` + ").append(goodsCount).append(" ")
                 .append("where `id` = ").append(goodsId);
