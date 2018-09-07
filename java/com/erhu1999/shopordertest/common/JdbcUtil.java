@@ -83,6 +83,7 @@ public class JdbcUtil {
         try {
             return DriverManager.getConnection(url, user, password);
         } catch (Exception e) {
+            System.out.println("获取数据库连接失败，请检查配置文件是否正确：config.properties");
             e.printStackTrace();
             return null;
         }
