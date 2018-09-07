@@ -47,7 +47,6 @@ CREATE TABLE `Goods`  (
   `sales` int(10) NOT NULL DEFAULT 0 COMMENT '销量',
   `isOn` int(1) NOT NULL DEFAULT 1 COMMENT '是否上架',
   `firstImg` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '第一张图片',
-  `imgs` varchar(1000) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '图片，以逗号分隔',
   `intro` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL COMMENT '详情',
   `addTime` bigint(20) NOT NULL COMMENT '添加时间',
   PRIMARY KEY (`id`) USING BTREE
@@ -56,7 +55,7 @@ CREATE TABLE `Goods`  (
 -- ----------------------------
 -- Records of Goods
 -- ----------------------------
-INSERT INTO `Goods` VALUES (1, '锤子（smartisan ) 坚果 Pro 2S 6G+64GB 炫光蓝 全面屏双摄 全网通4G手机 双卡双待 游戏手机', 199800, 100, 0, 1, 'https://resource.smartisan.com/resource/25cc6e783a664fbdf83c3c34774a9826.png', 'https://resource.smartisan.com/resource/25cc6e783a664fbdf83c3c34774a9826.png', 'https://resource.smartisan.com/resource/25cc6e783a664fbdf83c3c34774a9826.png', 20180901115333000);
+INSERT INTO `Goods` VALUES (1, '锤子（smartisan ) 坚果 Pro 2S 6G+64GB 炫光蓝 全面屏双摄 全网通4G手机 双卡双待 游戏手机', 199800, 100, 0, 1, 'https://resource.smartisan.com/resource/25cc6e783a664fbdf83c3c34774a9826.png', 'https://resource.smartisan.com/resource/25cc6e783a664fbdf83c3c34774a9826.png', 20180901115333000);
 
 -- ----------------------------
 -- Table structure for Order
