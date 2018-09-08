@@ -71,7 +71,7 @@ public class Version001Test {
         // 平均时间（毫秒）
         long avgTimeMillis = (endTimeMillis - startTimeMillis) / submitCnt;
         System.out.println("提交每个订单平均耗时的毫秒数：" + avgTimeMillis);
-        System.out.println("提交每秒钟可以提交的订单数：" + 1000 / avgTimeMillis);
+        System.out.println("每秒钟可以提交的订单数：" + 1000 / avgTimeMillis);
         // 查询下单之后的商品信息
         goods = queryOneRow("select `stock`,`sales` from `Goods` as t where t.id=" + goodsId);
         // 下单之后的库存
