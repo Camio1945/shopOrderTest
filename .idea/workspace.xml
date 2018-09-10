@@ -26,55 +26,59 @@
     <session id="-2101253425">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="19" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="6" />
+          <entry key="project.closed" value="22" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="7" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.4" value="2" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.6" value="3" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.6" value="6" />
           <entry key="project.open.time.7" value="4" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="4" />
-          <entry key="project.opened" value="27" />
+          <entry key="project.opened" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="4" />
-          <entry key="java" value="55" />
-          <entry key="properties" value="5" />
-          <entry key="sql" value="6" />
+          <entry key="java" value="87" />
+          <entry key="js" value="1" />
+          <entry key="properties" value="6" />
+          <entry key="sql" value="8" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="4" />
-          <entry key="JAVA" value="55" />
-          <entry key="Properties" value="5" />
-          <entry key="SQL" value="6" />
+          <entry key="JAVA" value="87" />
+          <entry key="JavaScript" value="1" />
+          <entry key="Properties" value="6" />
+          <entry key="SQL" value="8" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="6" />
-          <entry key="java" value="7083" />
-          <entry key="properties" value="111" />
-          <entry key="sql" value="14" />
+          <entry key="dummy" value="12" />
+          <entry key="java" value="8366" />
+          <entry key="js" value="376" />
+          <entry key="properties" value="192" />
+          <entry key="sql" value="18" />
           <entry key="xml" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7081" />
-          <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Properties" value="111" />
+          <entry key="JAVA" value="8364" />
+          <entry key="JavaScript" value="376" />
+          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="Properties" value="192" />
           <entry key="RegExp" value="2" />
-          <entry key="SQL" value="14" />
+          <entry key="SQL" value="18" />
           <entry key="XML" value="27" />
         </counts>
       </usages-collector>
@@ -83,19 +87,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/config.properties">
+        <entry file="file://$PROJECT_DIR$/java/com/erhu1999/shopordertest/version001/Version001.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+            <state relative-caret-position="476">
+              <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/com/erhu1999/shopordertest/version001/Version001Test.java">
+        <entry file="file://$PROJECT_DIR$/test/com/erhu1999/shopordertest/version002/Version002Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+            <state relative-caret-position="253">
+              <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,10 +111,52 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/erhu1999/shopordertest/version001/Version001Test.sql">
+        <entry file="file://$PROJECT_DIR$/test/com/erhu1999/shopordertest/version001/Version001Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1311">
-              <caret line="57" column="194" selection-start-line="57" selection-start-column="194" selection-end-line="57" selection-end-column="194" />
+            <state relative-caret-position="242">
+              <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/com/erhu1999/shopordertest/version001/JdbcUtil001.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="23" column="44" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/com/erhu1999/shopordertest/common/AssertUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="909">
+              <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/erhu1999/shopordertest/common/AbstractTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="575">
+              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/Class.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="1308" column="24" selection-start-line="1308" selection-start-column="24" selection-end-line="1308" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -146,6 +195,13 @@
       <find>100</find>
       <find>【请根据需要修改这个值】</find>
       <find>订单支付状态异常</find>
+      <find>Version001</find>
+      <find>connectionLinkedList</find>
+      <find>version001</find>
+      <find>throws SQLException</find>
+      <find>获取默认连接（Oracle），即由JDBCUtil类指定的用户名/密码</find>
+      <find>获取一个数据库连接平均耗时</find>
+      <find>System.out.println</find>
     </findStrings>
     <replaceStrings>
       <replace>DbInitializer</replace>
@@ -153,6 +209,12 @@
       <replace>/</replace>
       <replace>com.mysql.cj.jdbc.Driver</replace>
       <replace>`,`</replace>
+      <replace>Version002</replace>
+      <replace>connectionList</replace>
+      <replace>JdbcUtil002</replace>
+      <replace>version002</replace>
+      <replace>获取数据库连接</replace>
+      <replace>p</replace>
     </replaceStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -185,13 +247,25 @@
         <option value="$PROJECT_DIR$/java/com/erhu1999/shopordertest/common/AssertUtil.java" />
         <option value="$PROJECT_DIR$/java/com/erhu1999/shopordertest/common/Constant.java" />
         <option value="$PROJECT_DIR$/test/com/erhu1999/shopordertest/common/TestUtil.java" />
-        <option value="$PROJECT_DIR$/test/com/erhu1999/shopordertest/version001/Version001Test.java" />
-        <option value="$PROJECT_DIR$/test/com/erhu1999/shopordertest/version001/Version001Test.sql" />
         <option value="$PROJECT_DIR$/test/com/erhu1999/shopordertest/common/Config.java" />
-        <option value="$PROJECT_DIR$/java/com/erhu1999/shopordertest/common/JdbcUtil.java" />
-        <option value="$PROJECT_DIR$/resources/config.properties" />
-        <option value="$PROJECT_DIR$/java/com/erhu1999/shopordertest/version001/Version001.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/java/com/erhu1999/shopordertest/common/JdbcPool.java" />
+        <option value="$PROJECT_DIR$/java/com/erhu1999/shopordertest/common/ConnectionPool.java" />
+        <option value="$PROJECT_DIR$/../../chromeExtention/adjustPage/adjust.js" />
+        <option value="$PROJECT_DIR$/java/com/erhu1999/shopordertest/common/JdbcUtil.java" />
+        <option value="$PROJECT_DIR$/java/com/erhu1999/shopordertest/version001/JdbcUtil.java" />
+        <option value="$PROJECT_DIR$/java/com/erhu1999/shopordertest/version002/ConnectionPool.java" />
+        <option value="$PROJECT_DIR$/test/com/erhu1999/shopordertest/version001/Version001Test.sql" />
+        <option value="$PROJECT_DIR$/java/com/erhu1999/shopordertest/version002/JdbcUtil001.java" />
+        <option value="$PROJECT_DIR$/resources/config.properties" />
+        <option value="$PROJECT_DIR$/java/com/erhu1999/shopordertest/version001/JdbcUtil001.java" />
+        <option value="$PROJECT_DIR$/java/com/erhu1999/shopordertest/version001/Version001.java" />
+        <option value="$PROJECT_DIR$/java/com/erhu1999/shopordertest/version002/ConnectionPool002.java" />
+        <option value="$PROJECT_DIR$/java/com/erhu1999/shopordertest/version002/JdbcUtil002.java" />
+        <option value="$PROJECT_DIR$/java/com/erhu1999/shopordertest/version002/Version002.java" />
+        <option value="$PROJECT_DIR$/test/com/erhu1999/shopordertest/common/AbstractTest.java" />
+        <option value="$PROJECT_DIR$/test/com/erhu1999/shopordertest/version001/Version001Test.java" />
+        <option value="$PROJECT_DIR$/test/com/erhu1999/shopordertest/version002/Version002Test.java" />
       </list>
     </option>
   </component>
@@ -313,6 +387,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -336,7 +411,21 @@
               <item name="shopOrderTest" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="shopordertest" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shopOrderTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopOrderTest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shopordertest" type="462c0819:PsiDirectoryNode" />
               <item name="version001" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shopOrderTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopOrderTest" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shopordertest" type="462c0819:PsiDirectoryNode" />
+              <item name="version002" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shopOrderTest" type="b2602c69:ProjectViewProjectNode" />
@@ -359,13 +448,26 @@
               <item name="shopOrderTest" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="shopordertest" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shopOrderTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopOrderTest" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="shopordertest" type="462c0819:PsiDirectoryNode" />
               <item name="version001" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shopOrderTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shopOrderTest" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="shopordertest" type="462c0819:PsiDirectoryNode" />
+              <item name="version002" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -378,7 +480,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="editorconfig.notification" value="[]&#10;" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="D:/Program Files/nodejs/node.exe" />
+    <property name="last_opened_file_path" value="D:/Documents/Downloads/shopOrderTest-001" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="options.lastSelected" value="preferences.pluginManager" />
@@ -390,8 +492,16 @@
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.erhu1999.shopordertest.version002" />
+      <recent name="com.erhu1999.shopordertest.version001" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.erhu1999.shopordertest.version002" />
       <recent name="com.erhu1999.shopordertest.common" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\allCode\mr_huKaiXuan\github\shopOrderTest\test\com\erhu1999\shopordertest\version002" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -406,7 +516,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Version001Test">
+  <component name="RunManager" selected="JUnit.com.erhu1999.shopordertest in shopOrderTest">
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -439,14 +549,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.erhu1999.shopordertest.common.JdbcUtil" />
-      <module name="shopOrderTest" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -457,20 +559,6 @@
       <module name="shopOrderTest" />
       <option name="PACKAGE_NAME" value="com.erhu1999.shopordertest.version001" />
       <option name="MAIN_CLASS_NAME" value="com.erhu1999.shopordertest.version001.Version001Test" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Version001Test.multiThread" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="shopOrderTest" />
-      <option name="PACKAGE_NAME" value="com.erhu1999.shopordertest.version001" />
-      <option name="MAIN_CLASS_NAME" value="com.erhu1999.shopordertest.version001.Version001Test" />
-      <option name="METHOD_NAME" value="multiThread" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
@@ -493,6 +581,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Version002Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shopOrderTest" />
+      <option name="PACKAGE_NAME" value="com.erhu1999.shopordertest.version002" />
+      <option name="MAIN_CLASS_NAME" value="com.erhu1999.shopordertest.version002.Version002Test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Version002Test.newConnectionAvgTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shopOrderTest" />
+      <option name="PACKAGE_NAME" value="com.erhu1999.shopordertest.version002" />
+      <option name="MAIN_CLASS_NAME" value="com.erhu1999.shopordertest.version002.Version002Test" />
+      <option name="METHOD_NAME" value="newConnectionAvgTime" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -502,9 +616,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.erhu1999.shopordertest.version001 in shopOrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="com.erhu1999.shopordertest in shopOrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shopOrderTest" />
-      <option name="PACKAGE_NAME" value="com.erhu1999.shopordertest.version001" />
+      <option name="PACKAGE_NAME" value="com.erhu1999.shopordertest" />
       <option name="TEST_OBJECT" value="package" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -619,17 +733,17 @@
       <item itemvalue="Tomcat Server.Unnamed" />
       <item itemvalue="JUnit.Version001Test" />
       <item itemvalue="JUnit.Version001Test.singleThread" />
-      <item itemvalue="Application.JdbcUtil" />
-      <item itemvalue="JUnit.Version001Test.multiThread" />
-      <item itemvalue="JUnit.com.erhu1999.shopordertest.version001 in shopOrderTest" />
+      <item itemvalue="JUnit.Version002Test" />
+      <item itemvalue="JUnit.Version002Test.newConnectionAvgTime" />
+      <item itemvalue="JUnit.com.erhu1999.shopordertest in shopOrderTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.com.erhu1999.shopordertest in shopOrderTest" />
+        <item itemvalue="JUnit.Version002Test" />
         <item itemvalue="JUnit.Version001Test" />
+        <item itemvalue="JUnit.Version002Test.newConnectionAvgTime" />
         <item itemvalue="JUnit.Version001Test.singleThread" />
-        <item itemvalue="JUnit.com.erhu1999.shopordertest.version001 in shopOrderTest" />
-        <item itemvalue="JUnit.Version001Test.multiThread" />
-        <item itemvalue="Application.JdbcUtil" />
       </list>
     </recent_temporary>
   </component>
@@ -666,49 +780,65 @@
       <workItem from="1536236881067" duration="1607000" />
       <workItem from="1536320889420" duration="5730000" />
       <workItem from="1536379318438" duration="443000" />
-      <workItem from="1536382386730" duration="1237000" />
+      <workItem from="1536382386730" duration="4418000" />
+      <workItem from="1536396349599" duration="6346000" />
+      <workItem from="1536456842336" duration="4853000" />
+      <workItem from="1536482068050" duration="599000" />
+      <workItem from="1536539493467" duration="607000" />
+      <workItem from="1536578087828" duration="1987000" />
+      <workItem from="1536580180937" duration="4626000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Version001Test_singleThread - 2018.09.04 at 18h 35m 21s.xml">
-      <configuration name="Version001Test.singleThread" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Version001Test_singleThread - 2018.09.04 at 18h 35m 48s.xml">
-      <configuration name="Version001Test.singleThread" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Version001Test_singleThread - 2018.09.04 at 18h 36m 11s.xml">
-      <configuration name="Version001Test.singleThread" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Version001Test_singleThread - 2018.09.04 at 18h 36m 42s.xml">
-      <configuration name="Version001Test.singleThread" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Version001Test_singleThread - 2018.09.04 at 18h 37m 06s.xml">
-      <configuration name="Version001Test.singleThread" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Version001Test_singleThread - 2018.09.04 at 18h 37m 34s.xml">
-      <configuration name="Version001Test.singleThread" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Version001Test - 2018.09.06 at 20h 58m 00s.xml">
+    <history-entry file="Version001Test - 2018.09.10 at 19h 53m 26s.xml">
       <configuration name="Version001Test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Version001Test - 2018.09.07 at 20h 23m 59s.xml">
-      <configuration name="Version001Test" configurationId="JUnit" />
+    <history-entry file="Version002Test - 2018.09.10 at 20h 37m 14s.xml">
+      <configuration name="Version002Test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Version001Test - 2018.09.07 at 20h 24m 28s.xml">
-      <configuration name="Version001Test" configurationId="JUnit" />
+    <history-entry file="Version002Test - 2018.09.10 at 20h 37m 45s.xml">
+      <configuration name="Version002Test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Version001Test - 2018.09.07 at 20h 38m 17s.xml">
-      <configuration name="Version001Test" configurationId="JUnit" />
+    <history-entry file="com_erhu1999_shopordertest_in_shopOrderTest - 2018.09.10 at 20h 38m 26s.xml">
+      <configuration name="com.erhu1999.shopordertest in shopOrderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="com_erhu1999_shopordertest_in_shopOrderTest - 2018.09.10 at 20h 45m 15s.xml">
+      <configuration name="com.erhu1999.shopordertest in shopOrderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="com_erhu1999_shopordertest_in_shopOrderTest - 2018.09.10 at 20h 46m 14s.xml">
+      <configuration name="com.erhu1999.shopordertest in shopOrderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="com_erhu1999_shopordertest_in_shopOrderTest - 2018.09.10 at 20h 48m 14s.xml">
+      <configuration name="com.erhu1999.shopordertest in shopOrderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="com_erhu1999_shopordertest_in_shopOrderTest - 2018.09.10 at 20h 50m 40s.xml">
+      <configuration name="com.erhu1999.shopordertest in shopOrderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="com_erhu1999_shopordertest_in_shopOrderTest - 2018.09.10 at 20h 52m 00s.xml">
+      <configuration name="com.erhu1999.shopordertest in shopOrderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="com_erhu1999_shopordertest_in_shopOrderTest - 2018.09.10 at 20h 54m 35s.xml">
+      <configuration name="com.erhu1999.shopordertest in shopOrderTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57318000" />
+    <option name="totallyTimeSpent" value="79517000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31556502" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32249466" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -716,21 +846,21 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32975295" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.43609023" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.50805587" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.54672396" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Problems" order="8" />
-      <window_info anchor="bottom" id="JRebel Console" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Problems" order="8" weight="0.32975295" />
+      <window_info anchor="bottom" id="JRebel Console" order="9" sideWeight="0.5010661" side_tool="true" weight="0.50805587" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32975295" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.32975295" />
       <window_info anchor="bottom" id="JRebel Executor" order="14" />
-      <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.50053304" side_tool="true" weight="0.43609023" />
-      <window_info anchor="bottom" id="Messages" order="16" />
+      <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.5010661" side_tool="true" weight="0.50805587" />
+      <window_info anchor="bottom" id="Messages" order="16" weight="0.32975295" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -739,7 +869,7 @@
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32995737" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30916846" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32249466" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -747,21 +877,21 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32975295" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.43609023" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.50805587" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.54672396" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32975295" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Problems" order="8" />
-      <window_info anchor="bottom" id="JRebel Console" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Problems" order="8" weight="0.32975295" />
+      <window_info anchor="bottom" id="JRebel Console" order="9" sideWeight="0.5010661" side_tool="true" weight="0.50805587" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32975295" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.32975295" />
       <window_info anchor="bottom" id="JRebel Executor" order="14" />
-      <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.50053304" side_tool="true" weight="0.43609023" />
-      <window_info anchor="bottom" id="Messages" order="16" />
+      <window_info anchor="bottom" id="Event Log" order="15" sideWeight="0.5010661" side_tool="true" weight="0.50805587" />
+      <window_info anchor="bottom" id="Messages" order="16" weight="0.32975295" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -897,20 +1027,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/erhu1999/shopordertest/version001/Version001.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="851">
-          <caret line="37" column="116" selection-start-line="37" selection-start-column="116" selection-end-line="37" selection-end-column="116" />
+        <state relative-caret-position="437">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../chromeExtention/adjustPage/adjust.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/erhu1999/shopordertest/common/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/erhu1999/shopordertest/version002/ConnectionPool002.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="34" column="10" lean-forward="true" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+          <folding>
+            <element signature="e#1502#1503#0" expanded="true" />
+            <element signature="e#1529#1530#0" expanded="true" />
+            <element signature="e#1586#1587#0" expanded="true" />
+            <element signature="e#1613#1614#0" expanded="true" />
+            <element signature="e#1678#1679#0" expanded="true" />
+            <element signature="e#1706#1707#0" expanded="true" />
+            <element signature="e#1761#1762#0" expanded="true" />
+            <element signature="e#1788#1789#0" expanded="true" />
+            <element signature="e#1977#1978#0" expanded="true" />
+            <element signature="e#2001#2002#0" expanded="true" />
+            <element signature="e#2024#2025#0" expanded="true" />
+            <element signature="e#2051#2052#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/erhu1999/shopordertest/version002/JdbcUtil002.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="285" column="19" selection-start-line="285" selection-start-column="19" selection-end-line="285" selection-end-column="19" />
+          <folding>
+            <element signature="e#2596#2597#0" expanded="true" />
+            <element signature="e#2657#2658#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/erhu1999/shopordertest/version002/Version002.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="128" column="40" selection-start-line="128" selection-start-column="40" selection-end-line="128" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/com/erhu1999/shopordertest/common/JdbcUtil.java">
+    <entry file="file://$PROJECT_DIR$/test/com/erhu1999/shopordertest/version001/Version001Test.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1955">
-          <caret line="85" column="74" selection-start-line="85" selection-start-column="74" selection-end-line="85" selection-end-column="74" />
+        <state relative-caret-position="215">
+          <caret line="57" column="140" selection-start-line="57" selection-start-column="140" selection-end-line="57" selection-end-column="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/erhu1999/shopordertest/version002/Version002Test.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/com/erhu1999/shopordertest/version001/JdbcUtil001.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" column="44" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -919,46 +1119,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java/com/erhu1999/shopordertest/common/AssertUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1104">
+        <state relative-caret-position="909">
           <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/erhu1999/shopordertest/common/Config.java">
+    <entry file="file://$PROJECT_DIR$/java/com/erhu1999/shopordertest/version001/Version001.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1081">
-          <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+        <state relative-caret-position="476">
+          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        <state relative-caret-position="392">
+          <caret line="1308" column="24" selection-start-line="1308" selection-start-column="24" selection-end-line="1308" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/config.properties">
+    <entry file="file://$PROJECT_DIR$/test/com/erhu1999/shopordertest/common/AbstractTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/erhu1999/shopordertest/version001/Version001Test.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1311">
-          <caret line="57" column="194" selection-start-line="57" selection-start-column="194" selection-end-line="57" selection-end-column="194" />
+        <state relative-caret-position="575">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/erhu1999/shopordertest/version001/Version001Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        <state relative-caret-position="242">
+          <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/erhu1999/shopordertest/version002/Version002Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
