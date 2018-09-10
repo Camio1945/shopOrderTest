@@ -1,4 +1,4 @@
-package com.erhu1999.shopordertest.common;
+package com.erhu1999.shopordertest.version001;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -21,10 +21,11 @@ import static com.erhu1999.shopordertest.common.AssertUtil.assertFileExists;
 
 /**
  * JDBC工具类
+ * 【备注】为了防止被其他测试包引用，这里没有把类设置为public类型，以防导致混乱
  *
  * @author HuKaiXuan
  */
-public class JdbcUtil {
+class JdbcUtil001 {
     /** URL参数 */
     public static final String URL_PARAM = "?useUnicode=true&characterEncoding=UTF-8&useSSL=false";
     /** 数据库驱动 */
@@ -75,7 +76,7 @@ public class JdbcUtil {
     public static final int DB_TYPE_SQLSERVER = 3;
 
     /**
-     * 获取默认连接（Oracle），即由JDBCUtil类指定的用户名/密码
+     * 获取数据库连接
      *
      * @return java.sql.Connection 对象
      */

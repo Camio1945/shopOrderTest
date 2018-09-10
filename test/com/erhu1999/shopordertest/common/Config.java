@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-import static com.erhu1999.shopordertest.common.JdbcUtil.URL_PARAM;
+import static com.erhu1999.shopordertest.version001.JdbcUtil001.URL_PARAM;
 
 /** 配置文件 */
 public class Config {
