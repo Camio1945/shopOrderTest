@@ -12,7 +12,6 @@ import java.util.UUID;
 import static com.erhu1999.shopordertest.common.AssertUtil.assertBoolIsTrue;
 import static com.erhu1999.shopordertest.common.AssertUtil.assertNotNull;
 import static com.erhu1999.shopordertest.version002.JdbcUtil002.getConnectionFromPool;
-import static com.erhu1999.shopordertest.version002.JdbcUtil002.newConnection;
 
 /**
  * {@link #DISPLAY_NAME}
