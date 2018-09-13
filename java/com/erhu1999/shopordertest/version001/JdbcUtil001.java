@@ -1,5 +1,7 @@
 package com.erhu1999.shopordertest.version001;
 
+import com.erhu1999.shopordertest.common.Constant;
+
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -26,10 +28,8 @@ import static com.erhu1999.shopordertest.common.AssertUtil.assertFileExists;
  * @author HuKaiXuan
  */
 class JdbcUtil001 {
-    /** URL参数 */
-    public static final String URL_PARAM = "?useUnicode=true&characterEncoding=UTF-8&useSSL=false";
     /** 数据库驱动 */
-    private static String driver = "com.mysql.cj.jdbc.Driver";
+    private static String driver = Constant.DRIVER_CLASS_NAME;
     /** 数据库URL */
     private static String url = "";
     /** 数据库帐号 */
@@ -58,7 +58,7 @@ class JdbcUtil001 {
      */
     public static void renewUrl(String dbName) {
         assertBasicStr(dbName);
-        url = url.replace(URL_PARAM, "/" + dbName + URL_PARAM);
+        url = url.replace(Constant.DB_URL_PARAM, "/" + dbName + Constant.DB_URL_PARAM);
     }
 
     /** 初始化 */

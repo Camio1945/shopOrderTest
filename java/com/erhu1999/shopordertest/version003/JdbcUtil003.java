@@ -1,7 +1,8 @@
-package com.erhu1999.shopordertest.version002;
+package com.erhu1999.shopordertest.version003;
 
 import com.erhu1999.shopordertest.common.Constant;
 
+import javax.sql.DataSource;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -27,15 +28,15 @@ import static com.erhu1999.shopordertest.common.AssertUtil.assertFileExists;
  *
  * @author HuKaiXuan
  */
-class JdbcUtil002 {
+class JdbcUtil003 {
     /** 数据库驱动 */
     private static String driver = Constant.DRIVER_CLASS_NAME;
     /** 数据库URL */
     private static String url = "";
     /** 数据库帐号 */
-    private static String user = "root";
+    private static String user = "";
     /** 数据库密码 */
-    private static String password = "Dn-qFif4yrP&_up72";
+    private static String password = "";
 
     private static Connection conn;
     private static Statement st;
@@ -90,13 +91,21 @@ class JdbcUtil002 {
         }
     }
 
+    /** 数据源 */
+    private static DataSource dataSource = null;
+
+    /** 设置数据库源 */
+    public static void setDataSource(DataSource dataSourceOut) {
+        dataSource = dataSourceOut;
+    }
+
     /**
      * 获取数据库连接
      *
      * @return java.sql.Connection 对象
      */
-    public static Connection getConnectionFromPool() {
-        return new ConnectionPool002().getConnection();
+    public static Connection getConnectionFromPool() throws SQLException {
+        return dataSource.getConnection();
     }
 
     /**
