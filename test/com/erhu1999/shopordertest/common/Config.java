@@ -4,8 +4,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-import static com.erhu1999.shopordertest.version001.JdbcUtil001.URL_PARAM;
-
 /** 配置文件 */
 public class Config {
 
@@ -30,7 +28,7 @@ public class Config {
         // 加载配置文件
         Properties properties = loadProperty();
         String dbUrl = properties.getProperty(DB_URL_PROPERTY_KEY);
-        DB_URL = dbUrl + URL_PARAM;
+        DB_URL = dbUrl + Constant.DB_URL_PARAM;
         DB_USER = properties.getProperty(DB_USER_PROPERTY_KEY);
         DB_PWD = properties.getProperty(DB_PWD_PROPERTY_KEY);
         boolean isNull = dbUrl == null || DB_USER == null || DB_PWD == null;
