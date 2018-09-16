@@ -1,4 +1,4 @@
-package com.erhu1999.shopordertest.version003;
+package com.erhu1999.shopordertest.version004;
 
 import com.erhu1999.shopordertest.common.Constant;
 
@@ -11,7 +11,7 @@ import java.util.UUID;
 
 import static com.erhu1999.shopordertest.common.AssertUtil.assertBoolIsTrue;
 import static com.erhu1999.shopordertest.common.AssertUtil.assertNotNull;
-import static com.erhu1999.shopordertest.version003.JdbcUtil003.getConnectionFromPool;
+import static com.erhu1999.shopordertest.version004.JdbcUtil004.getConnectionFromPool;
 
 /**
  * {@link #DISPLAY_NAME}
@@ -20,9 +20,9 @@ import static com.erhu1999.shopordertest.version003.JdbcUtil003.getConnectionFro
  *
  * @author HuKaiXuan
  */
-class Version003 {
+class Version004 {
     /** 显示名称（类注释），当前类与测试类共用一段描述 */
-    public static final String DISPLAY_NAME = "第003版提交订单";
+    public static final String DISPLAY_NAME = "第004版提交订单";
 
     /**
      * 提交订单
@@ -34,11 +34,11 @@ class Version003 {
      */
     public static void submitOrder(Long userId, Long goodsId, int goodsCount, Long addrId) throws Exception {
         // 1、查询用户
-        Map<String, Object> user = com.erhu1999.shopordertest.version003.JdbcUtil003.queryOneRow("select `id`,`name` from `User` as t where t.id=" + userId);
+        Map<String, Object> user = JdbcUtil004.queryOneRow("select `id`,`name` from `User` as t where t.id=" + userId);
         // 2、查询商品
-        Map<String, Object> goods = com.erhu1999.shopordertest.version003.JdbcUtil003.queryOneRow("select `id`,`name`,`price`,`stock`,`sales`,`isOn`,`firstImg` from `Goods` as t where t.id=" + goodsId);
+        Map<String, Object> goods = JdbcUtil004.queryOneRow("select `id`,`name`,`price`,`stock`,`sales`,`isOn`,`firstImg` from `Goods` as t where t.id=" + goodsId);
         // 3、查询地址
-        Map<String, Object> addr = com.erhu1999.shopordertest.version003.JdbcUtil003.queryOneRow("select `id`,`userId`,`mobile`,`name`,`addr` from `Addr` as t where t.id=" + addrId);
+        Map<String, Object> addr = JdbcUtil004.queryOneRow("select `id`,`userId`,`mobile`,`name`,`addr` from `Addr` as t where t.id=" + addrId);
         // 4、检查相关的参数是否正确
         checkParam(userId, goodsId, goodsCount, addrId, user, goods, addr);
         // 5、保存订单到数据库中，并返回订单ID
@@ -68,7 +68,7 @@ class Version003 {
             stmt = conn.createStatement();
             stmt.executeUpdate(updateSql);
         } finally {
-            com.erhu1999.shopordertest.version003.JdbcUtil003.close(conn, stmt, null, rs);
+            JdbcUtil004.close(conn, stmt, null, rs);
         }
     }
 
@@ -134,7 +134,7 @@ class Version003 {
                 return orderId;
             }
         } finally {
-            com.erhu1999.shopordertest.version003.JdbcUtil003.close(conn, stmt, null, rs);
+            JdbcUtil004.close(conn, stmt, null, rs);
         }
         throw new RuntimeException("添加订单失败");
     }
