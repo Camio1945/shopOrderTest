@@ -1,0 +1,780 @@
+
+------------------------------ 分隔线 Version002Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version002
+初始化数据库完成：shop_order_test_version002
+获取一个数据库连接平均耗时：4 毫秒
+初始化数据库连接池完成，数量为：100
+
+------------------------------ 分隔线 Version002Test : testDataSourceByMe ------------------------------
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：112
+每秒钟可以提交的订单数：8
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+------------------------------ 分隔线 Version003Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version003
+初始化数据库完成：shop_order_test_version003
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+初始化druid数据源完成九月 15, 2018 5:44:53 下午 com.alibaba.druid.pool.DruidDataSource info
+
+信息: {dataSource-1} inited
+
+------------------------------ 分隔线 Version003Test : testDataSourceByDruid ------------------------------
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：117
+每秒钟可以提交的订单数：8
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+------------------------------ 分隔线 Version004Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version004
+初始化数据库完成：shop_order_test_version004
+初始化hikari的数据源完成
+
+------------------------------ 分隔线 Version004Test : testDataSourceByHikari ------------------------------
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：107
+每秒钟可以提交的订单数：9
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+Process finished with exit code 0
+
+
+------------------------------ 分隔线 Version002Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version002
+初始化数据库完成：shop_order_test_version002
+获取一个数据库连接平均耗时：4 毫秒
+初始化数据库连接池完成，数量为：100
+
+------------------------------ 分隔线 Version002Test : testDataSourceByMe ------------------------------
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：94
+每秒钟可以提交的订单数：10
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+------------------------------ 分隔线 Version003Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version003
+初始化数据库完成：shop_order_test_version003
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+九月 15, 2018 5:46:06 下午 com.alibaba.druid.pool.DruidDataSource info
+初始化druid数据源完成
+
+------------------------------ 分隔线 Version003Test : testDataSourceByDruid ------------------------------
+信息: {dataSource-1} inited
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：132
+每秒钟可以提交的订单数：7
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+------------------------------ 分隔线 Version004Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version004
+初始化数据库完成：shop_order_test_version004
+初始化hikari的数据源完成
+
+------------------------------ 分隔线 Version004Test : testDataSourceByHikari ------------------------------
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：104
+每秒钟可以提交的订单数：9
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+Process finished with exit code 0
+
+
+------------------------------ 分隔线 Version002Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version002
+初始化数据库完成：shop_order_test_version002
+获取一个数据库连接平均耗时：4 毫秒
+初始化数据库连接池完成，数量为：100
+
+------------------------------ 分隔线 Version002Test : testDataSourceByMe ------------------------------
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：109
+每秒钟可以提交的订单数：9
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+------------------------------ 分隔线 Version003Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version003
+初始化数据库完成：shop_order_test_version003
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+初始化druid数据源完成九月 15, 2018 5:47:18 下午 com.alibaba.druid.pool.DruidDataSource info
+
+信息: {dataSource-1} inited
+
+------------------------------ 分隔线 Version003Test : testDataSourceByDruid ------------------------------
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：127
+每秒钟可以提交的订单数：7
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+------------------------------ 分隔线 Version004Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version004
+初始化数据库完成：shop_order_test_version004
+初始化hikari的数据源完成
+
+------------------------------ 分隔线 Version004Test : testDataSourceByHikari ------------------------------
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：105
+每秒钟可以提交的订单数：9
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+Process finished with exit code 0
+
+
+------------------------------ 分隔线 Version002Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version002
+初始化数据库完成：shop_order_test_version002
+获取一个数据库连接平均耗时：4 毫秒
+初始化数据库连接池完成，数量为：100
+
+------------------------------ 分隔线 Version002Test : testDataSourceByMe ------------------------------
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：96
+每秒钟可以提交的订单数：10
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+------------------------------ 分隔线 Version003Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version003
+初始化数据库完成：shop_order_test_version003
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+九月 15, 2018 5:48:31 下午 com.alibaba.druid.pool.DruidDataSource info
+初始化druid数据源完成
+
+------------------------------ 分隔线 Version003Test : testDataSourceByDruid ------------------------------
+信息: {dataSource-1} inited
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：119
+每秒钟可以提交的订单数：8
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+------------------------------ 分隔线 Version004Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version004
+初始化数据库完成：shop_order_test_version004
+初始化hikari的数据源完成
+
+------------------------------ 分隔线 Version004Test : testDataSourceByHikari ------------------------------
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：101
+每秒钟可以提交的订单数：9
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+Process finished with exit code 0
+
+
+------------------------------ 分隔线 Version002Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version002
+初始化数据库完成：shop_order_test_version002
+获取一个数据库连接平均耗时：4 毫秒
+初始化数据库连接池完成，数量为：100
+
+------------------------------ 分隔线 Version002Test : testDataSourceByMe ------------------------------
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：108
+每秒钟可以提交的订单数：9
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+------------------------------ 分隔线 Version003Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version003
+初始化数据库完成：shop_order_test_version003
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+
+初始化druid数据源完成
+九月 15, 2018 6:29:34 下午 com.alibaba.druid.pool.DruidDataSource info
+------------------------------ 分隔线 Version003Test : testDataSourceByDruid ------------------------------
+信息: {dataSource-1} inited
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：121
+每秒钟可以提交的订单数：8
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+------------------------------ 分隔线 Version004Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version004
+初始化数据库完成：shop_order_test_version004
+初始化hikari的数据源完成
+
+------------------------------ 分隔线 Version004Test : testDataSourceByHikari ------------------------------
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：97
+每秒钟可以提交的订单数：10
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+Process finished with exit code 0
+
+
+------------------------------ 分隔线 Version002Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version002
+初始化数据库完成：shop_order_test_version002
+获取一个数据库连接平均耗时：4 毫秒
+初始化数据库连接池完成，数量为：100
+
+------------------------------ 分隔线 Version002Test : testDataSourceByMe ------------------------------
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：113
+每秒钟可以提交的订单数：8
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+------------------------------ 分隔线 Version003Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version003
+初始化数据库完成：shop_order_test_version003
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+九月 15, 2018 6:52:49 下午 com.alibaba.druid.pool.DruidDataSource info
+初始化druid数据源完成
+
+------------------------------ 分隔线 Version003Test : testDataSourceByDruid ------------------------------
+信息: {dataSource-1} inited
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：116
+每秒钟可以提交的订单数：8
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+------------------------------ 分隔线 Version004Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version004
+初始化数据库完成：shop_order_test_version004
+初始化hikari的数据源完成
+
+------------------------------ 分隔线 Version004Test : testDataSourceByHikari ------------------------------
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：108
+每秒钟可以提交的订单数：9
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+Process finished with exit code 0
+
+
+------------------------------ 分隔线 Version002Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version002
+初始化数据库完成：shop_order_test_version002
+获取一个数据库连接平均耗时：4 毫秒
+初始化数据库连接池完成，数量为：100
+
+------------------------------ 分隔线 Version002Test : testDataSourceByMe ------------------------------
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：101
+每秒钟可以提交的订单数：9
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+------------------------------ 分隔线 Version003Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version003
+初始化数据库完成：shop_order_test_version003
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+九月 15, 2018 6:54:14 下午 com.alibaba.druid.pool.DruidDataSource info
+初始化druid数据源完成
+
+------------------------------ 分隔线 Version003Test : testDataSourceByDruid ------------------------------
+信息: {dataSource-1} inited
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：133
+每秒钟可以提交的订单数：7
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+------------------------------ 分隔线 Version004Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version004
+初始化数据库完成：shop_order_test_version004
+初始化hikari的数据源完成
+
+------------------------------ 分隔线 Version004Test : testDataSourceByHikari ------------------------------
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：90
+每秒钟可以提交的订单数：11
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+Process finished with exit code 0
+
+
+------------------------------ 分隔线 Version002Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version002
+初始化数据库完成：shop_order_test_version002
+获取一个数据库连接平均耗时：4 毫秒
+初始化数据库连接池完成，数量为：100
+
+------------------------------ 分隔线 Version002Test : testDataSourceByMe ------------------------------
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：107
+每秒钟可以提交的订单数：9
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+------------------------------ 分隔线 Version003Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version003
+初始化数据库完成：shop_order_test_version003
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+初始化druid数据源完成九月 15, 2018 6:56:42 下午 com.alibaba.druid.pool.DruidDataSource info
+
+信息: {dataSource-1} inited
+
+------------------------------ 分隔线 Version003Test : testDataSourceByDruid ------------------------------
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：123
+每秒钟可以提交的订单数：8
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+------------------------------ 分隔线 Version004Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version004
+初始化数据库完成：shop_order_test_version004
+初始化hikari的数据源完成
+
+------------------------------ 分隔线 Version004Test : testDataSourceByHikari ------------------------------
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：133
+每秒钟可以提交的订单数：7
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+Process finished with exit code 0
+
+
+------------------------------ 分隔线 Version002Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version002
+初始化数据库完成：shop_order_test_version002
+获取一个数据库连接平均耗时：4 毫秒
+初始化数据库连接池完成，数量为：100
+
+------------------------------ 分隔线 Version002Test : testDataSourceByMe ------------------------------
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：99
+每秒钟可以提交的订单数：10
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+------------------------------ 分隔线 Version003Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version003
+初始化数据库完成：shop_order_test_version003
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+九月 15, 2018 6:58:10 下午 com.alibaba.druid.pool.DruidDataSource info
+初始化druid数据源完成
+
+------------------------------ 分隔线 Version003Test : testDataSourceByDruid ------------------------------
+信息: {dataSource-1} inited
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：124
+每秒钟可以提交的订单数：8
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+------------------------------ 分隔线 Version004Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version004
+初始化数据库完成：shop_order_test_version004
+初始化hikari的数据源完成
+
+------------------------------ 分隔线 Version004Test : testDataSourceByHikari ------------------------------
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：90
+每秒钟可以提交的订单数：11
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+Process finished with exit code 0
+
+
+------------------------------ 分隔线 Version002Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version002
+初始化数据库完成：shop_order_test_version002
+获取一个数据库连接平均耗时：4 毫秒
+初始化数据库连接池完成，数量为：100
+
+------------------------------ 分隔线 Version002Test : testDataSourceByMe ------------------------------
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：108
+每秒钟可以提交的订单数：9
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+------------------------------ 分隔线 Version003Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version003
+初始化数据库完成：shop_order_test_version003
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+
+初始化druid数据源完成
+
+------------------------------ 分隔线 Version003Test : testDataSourceByDruid ------------------------------九月 15, 2018 6:59:26 下午 com.alibaba.druid.pool.DruidDataSource info
+信息: {dataSource-1} inited
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：147
+每秒钟可以提交的订单数：6
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+------------------------------ 分隔线 Version004Test : initDb ------------------------------
+正在初始化数据库：shop_order_test_version004
+初始化数据库完成：shop_order_test_version004
+初始化hikari的数据源完成
+
+------------------------------ 分隔线 Version004Test : testDataSourceByHikari ------------------------------
+当前循环的序号：0
+当前循环的序号：11
+当前循环的序号：22
+当前循环的序号：33
+当前循环的序号：44
+当前循环的序号：55
+当前循环的序号：66
+当前循环的序号：77
+当前循环的序号：88
+当前循环的序号：99
+提交每个订单平均耗时的毫秒数：100
+每秒钟可以提交的订单数：10
+提交订单之前的库存：100
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：100
+
+Process finished with exit code 0
+

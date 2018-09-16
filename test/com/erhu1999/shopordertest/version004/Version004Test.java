@@ -1,8 +1,9 @@
-package com.erhu1999.shopordertest.version003;
+package com.erhu1999.shopordertest.version004;
 
-import com.alibaba.druid.pool.DruidDataSource;
 import com.erhu1999.shopordertest.common.AbstractTest;
 import com.erhu1999.shopordertest.common.Constant;
+import com.zaxxer.hikari.HikariConfig;
+import com.zaxxer.hikari.HikariDataSource;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -15,26 +16,26 @@ import static com.erhu1999.shopordertest.common.Config.DB_NAME_PREFIX;
 import static com.erhu1999.shopordertest.common.Config.DB_PWD;
 import static com.erhu1999.shopordertest.common.Config.DB_URL;
 import static com.erhu1999.shopordertest.common.Config.DB_USER;
-import static com.erhu1999.shopordertest.version003.JdbcUtil003.dropDbIfExistsThenCreateDb;
-import static com.erhu1999.shopordertest.version003.JdbcUtil003.execSqlFile;
-import static com.erhu1999.shopordertest.version003.JdbcUtil003.init;
-import static com.erhu1999.shopordertest.version003.JdbcUtil003.queryOneRow;
-import static com.erhu1999.shopordertest.version003.JdbcUtil003.renewUrl;
+import static com.erhu1999.shopordertest.version004.JdbcUtil004.dropDbIfExistsThenCreateDb;
+import static com.erhu1999.shopordertest.version004.JdbcUtil004.execSqlFile;
+import static com.erhu1999.shopordertest.version004.JdbcUtil004.init;
+import static com.erhu1999.shopordertest.version004.JdbcUtil004.queryOneRow;
+import static com.erhu1999.shopordertest.version004.JdbcUtil004.renewUrl;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
- * 版本003的测试用例
+ * 版本004的测试用例
  */
-class Version003Test extends AbstractTest {
+class Version004Test extends AbstractTest {
     /** 数据库名称 */
-    private static final String DB_NAME = DB_NAME_PREFIX + "version003";
+    private static final String DB_NAME = DB_NAME_PREFIX + "version004";
     /** 数据库连接数量 */
     private static final int CONN_NUMBER = 100;
 
     /** 在每个测试用例执行之前，先执行一遍初始化数据库的方法 */
     @BeforeEach
     void initDb() throws SQLException {
-        printSeparateLine(com.erhu1999.shopordertest.version003.Version003Test.class.getSimpleName(), new Exception().getStackTrace()[0].getMethodName());
+        printSeparateLine(Version004Test.class.getSimpleName(), new Exception().getStackTrace()[0].getMethodName());
         System.out.println("正在初始化数据库：" + DB_NAME);
         // 数据库数据库连接相关的参数
         init(DB_URL, DB_USER, DB_PWD);
@@ -42,48 +43,35 @@ class Version003Test extends AbstractTest {
         dropDbIfExistsThenCreateDb(DB_NAME);
         // 重新初始化数据库连接相关的参数
         renewUrl(DB_NAME);
-        String sqlFilePath = com.erhu1999.shopordertest.version003.Version003Test.class.getResource("").getFile() + com.erhu1999.shopordertest.version003.Version003Test.class.getSimpleName() + ".sql";
+        String sqlFilePath = Version004Test.class.getResource("").getFile() + Version004Test.class.getSimpleName() + ".sql";
         sqlFilePath = new File(sqlFilePath).getAbsolutePath().replaceAll("\\\\", "/");
         execSqlFile(sqlFilePath);
         System.out.println("初始化数据库完成：" + DB_NAME);
-        // 初始化阿里巴巴druid的数据源
-        initDataSourceByDruid();
+        // 初始化hikari的数据源
+        initDataSourceByHikari();
     }
 
-    /** 初始化阿里巴巴druid的数据源 */
-    private static void initDataSourceByDruid() throws SQLException {
-        //设置连接参数
-        DruidDataSource druidDataSource = new DruidDataSource();
+    /** 初始化hikari的数据源 */
+    private static void initDataSourceByHikari() throws SQLException {
         String dbUrl = DB_URL.replace(Constant.DB_URL_PARAM, "/" + DB_NAME + Constant.DB_URL_PARAM);
-        druidDataSource.setUrl(dbUrl);
-        druidDataSource.setDriverClassName(Constant.DRIVER_CLASS_NAME);
-        druidDataSource.setUsername(DB_USER);
-        druidDataSource.setPassword(DB_PWD);
-        //配置初始化大小、最小、最大
-        druidDataSource.setInitialSize(CONN_NUMBER);
-        druidDataSource.setMinIdle(CONN_NUMBER);
-        druidDataSource.setMaxActive(CONN_NUMBER * 2);
-        //连接泄漏监测
-        druidDataSource.setRemoveAbandoned(true);
-        druidDataSource.setRemoveAbandonedTimeout(30);
-        //配置获取连接等待超时的时间
-        druidDataSource.setMaxWait(20000);
-        //配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
-        druidDataSource.setTimeBetweenEvictionRunsMillis(20000);
-        //防止过期
-        druidDataSource.setValidationQuery("SELECT 'x'");
-        druidDataSource.setTestWhileIdle(true);
-        druidDataSource.setTestOnBorrow(true);
-        // 初始化
-        druidDataSource.init();
+        HikariConfig config = new HikariConfig();
+        config.setJdbcUrl(dbUrl);
+        config.setUsername(DB_USER);
+        config.setPassword(DB_PWD);
+        config.setMinimumIdle(CONN_NUMBER);
+        config.setMaximumPoolSize(CONN_NUMBER * 10);
+        config.addDataSourceProperty("cachePrepStmts", "true");
+        config.addDataSourceProperty("prepStmtCacheSize", "" + CONN_NUMBER);
+        config.addDataSourceProperty("prepStmtCacheSqlLimit", "" + (CONN_NUMBER * 10));
+        HikariDataSource hikariDataSource = new HikariDataSource(config);
         // 切换数据源
-        com.erhu1999.shopordertest.version003.JdbcUtil003.setDataSource(druidDataSource);
-        System.out.println("初始化druid数据源完成");
+        JdbcUtil004.setDataSource(hikariDataSource);
+        System.out.println("初始化hikari的数据源完成");
     }
 
     @Test
-    @DisplayName(com.erhu1999.shopordertest.version003.Version003.DISPLAY_NAME + " 单线程测试 阿里巴巴druid的数据源")
-    void testDataSourceByDruid() throws Exception {
+    @DisplayName(com.erhu1999.shopordertest.version004.Version004.DISPLAY_NAME + " 单线程测试 hikari的数据源")
+    void testDataSourceByHikari() throws Exception {
         printSeparateLine(this.getClass().getSimpleName(), new Exception().getStackTrace()[0].getMethodName());
         // 商品ID
         Long goodsId = 1L;
@@ -105,7 +93,7 @@ class Version003Test extends AbstractTest {
         long startTimeMillis = System.currentTimeMillis();
         for (int i = 0; i < submitCnt; i++) {
             // 调用提交订单的接口
-            com.erhu1999.shopordertest.version003.Version003.submitOrder(userId, goodsId, goodsCount, addrId);
+            com.erhu1999.shopordertest.version004.Version004.submitOrder(userId, goodsId, goodsCount, addrId);
             if (i % 11 == 0) {
                 System.out.println("当前循环的序号：" + i);
             }

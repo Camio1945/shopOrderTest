@@ -61,7 +61,7 @@ class Version002Test extends AbstractTest {
 
     @Test
     @DisplayName(Version002.DISPLAY_NAME + " 单线程测试")
-    void singleThread() throws Exception {
+    void testDataSourceByMe() throws Exception {
         printSeparateLine(this.getClass().getSimpleName(), new Exception().getStackTrace()[0].getMethodName());
         // 商品ID
         Long goodsId = 1L;
