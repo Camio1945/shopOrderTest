@@ -37,17 +37,6 @@ class Version004Test2 extends AbstractTest {
     @BeforeEach
     void initDb() throws SQLException {
         printSeparateLine(Version004Test2.class.getSimpleName(), new Exception().getStackTrace()[0].getMethodName());
-//        System.out.println("正在初始化数据库：" + DB_NAME);
-//        // 数据库数据库连接相关的参数
-//        init(DB_URL, DB_USER, DB_PWD);
-//        // 删除数据库（如果存在的话），然后创建数据库
-//        dropDbIfExistsThenCreateDb(DB_NAME);
-//        // 重新初始化数据库连接相关的参数
-//        renewUrl(DB_NAME);
-//        String sqlFilePath = Version004Test2.class.getResource("").getFile() + Version004Test2.class.getSimpleName() + ".sql";
-//        sqlFilePath = new File(sqlFilePath).getAbsolutePath().replaceAll("\\\\", "/");
-//        execSqlFile(sqlFilePath);
-//        System.out.println("初始化数据库完成：" + DB_NAME);
         // 初始化阿里巴巴druid的数据源
         initDataSourceByDruid();
         // 初始化hikari的数据源
