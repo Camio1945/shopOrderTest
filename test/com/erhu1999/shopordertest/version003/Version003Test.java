@@ -105,7 +105,7 @@ class Version003Test extends AbstractTest {
         long startTimeMillis = System.currentTimeMillis();
         for (int i = 0; i < submitCnt; i++) {
             // 调用提交订单的接口
-            com.erhu1999.shopordertest.version003.Version003.submitOrder(userId, goodsId, goodsCount, addrId);
+            Version003.submitOrder(userId, goodsId, goodsCount, addrId);
             if (i % 11 == 0) {
                 System.out.println("当前循环的序号：" + i);
             }
