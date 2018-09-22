@@ -1,0 +1,1361 @@
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 32 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 32
+提交每个订单平均耗时的纳秒数：6816374
+每秒钟可以提交的订单数：146
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 48 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 48
+提交每个订单平均耗时的纳秒数：4471899
+每秒钟可以提交的订单数：223
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 72 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 72
+提交每个订单平均耗时的纳秒数：3039363
+每秒钟可以提交的订单数：329
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 108 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 108
+提交每个订单平均耗时的纳秒数：2430670
+每秒钟可以提交的订单数：411
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 162 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 162
+提交每个订单平均耗时的纳秒数：1808022
+每秒钟可以提交的订单数：553
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 243 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 243
+提交每个订单平均耗时的纳秒数：1430435
+每秒钟可以提交的订单数：699
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 365 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 365
+提交每个订单平均耗时的纳秒数：1302199
+每秒钟可以提交的订单数：767
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 548 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 548
+提交每个订单平均耗时的纳秒数：1338133
+每秒钟可以提交的订单数：747
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 822 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 822
+提交每个订单平均耗时的纳秒数：2520498
+每秒钟可以提交的订单数：396
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 1233 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 1233
+提交每个订单平均耗时的纳秒数：11514914
+每秒钟可以提交的订单数：86
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+Process finished with exit code 0
+
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 32 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 32
+提交每个订单平均耗时的纳秒数：6459128
+每秒钟可以提交的订单数：154
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 48 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 48
+提交每个订单平均耗时的纳秒数：4510366
+每秒钟可以提交的订单数：221
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 72 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 72
+提交每个订单平均耗时的纳秒数：3205242
+每秒钟可以提交的订单数：311
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 108 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 108
+提交每个订单平均耗时的纳秒数：2256609
+每秒钟可以提交的订单数：443
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 162 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 162
+提交每个订单平均耗时的纳秒数：1721350
+每秒钟可以提交的订单数：580
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 243 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 243
+提交每个订单平均耗时的纳秒数：1394899
+每秒钟可以提交的订单数：716
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 365 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 365
+提交每个订单平均耗时的纳秒数：1341096
+每秒钟可以提交的订单数：745
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 548 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 548
+提交每个订单平均耗时的纳秒数：1416631
+每秒钟可以提交的订单数：705
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 822 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 822
+提交每个订单平均耗时的纳秒数：1185229
+每秒钟可以提交的订单数：843
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 1233 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 1233
+提交每个订单平均耗时的纳秒数：9914069
+每秒钟可以提交的订单数：100
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+Process finished with exit code 0
+
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 32 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 32
+提交每个订单平均耗时的纳秒数：6757404
+每秒钟可以提交的订单数：147
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 48 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 48
+提交每个订单平均耗时的纳秒数：4438446
+每秒钟可以提交的订单数：225
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 72 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 72
+提交每个订单平均耗时的纳秒数：3063023
+每秒钟可以提交的订单数：326
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 108 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 108
+提交每个订单平均耗时的纳秒数：2235312
+每秒钟可以提交的订单数：447
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 162 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 162
+提交每个订单平均耗时的纳秒数：3848547
+每秒钟可以提交的订单数：259
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 243 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 243
+提交每个订单平均耗时的纳秒数：1484328
+每秒钟可以提交的订单数：673
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 365 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 365
+提交每个订单平均耗时的纳秒数：1211192
+每秒钟可以提交的订单数：825
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 548 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 548
+提交每个订单平均耗时的纳秒数：2664873
+每秒钟可以提交的订单数：375
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 822 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 822
+提交每个订单平均耗时的纳秒数：1955897
+每秒钟可以提交的订单数：511
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 1233 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 1233
+提交每个订单平均耗时的纳秒数：9020486
+每秒钟可以提交的订单数：110
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+Process finished with exit code 0
+
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 32 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 32
+提交每个订单平均耗时的纳秒数：6389421
+每秒钟可以提交的订单数：156
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 48 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 48
+提交每个订单平均耗时的纳秒数：4364968
+每秒钟可以提交的订单数：229
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 72 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 72
+提交每个订单平均耗时的纳秒数：3064627
+每秒钟可以提交的订单数：326
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 108 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 108
+提交每个订单平均耗时的纳秒数：2303492
+每秒钟可以提交的订单数：434
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 162 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 162
+提交每个订单平均耗时的纳秒数：1805667
+每秒钟可以提交的订单数：553
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 243 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 243
+提交每个订单平均耗时的纳秒数：1383621
+每秒钟可以提交的订单数：722
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 365 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 365
+提交每个订单平均耗时的纳秒数：1247484
+每秒钟可以提交的订单数：801
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 548 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 548
+提交每个订单平均耗时的纳秒数：1359829
+每秒钟可以提交的订单数：735
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 822 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 822
+提交每个订单平均耗时的纳秒数：2284124
+每秒钟可以提交的订单数：437
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 1233 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 1233
+提交每个订单平均耗时的纳秒数：8046900
+每秒钟可以提交的订单数：124
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+Process finished with exit code 0
+
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 32 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 32
+提交每个订单平均耗时的纳秒数：6869264
+每秒钟可以提交的订单数：145
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 48 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 48
+提交每个订单平均耗时的纳秒数：4677051
+每秒钟可以提交的订单数：213
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 72 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 72
+提交每个订单平均耗时的纳秒数：3089635
+每秒钟可以提交的订单数：323
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 108 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 108
+提交每个订单平均耗时的纳秒数：2146247
+每秒钟可以提交的订单数：465
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 162 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 162
+提交每个订单平均耗时的纳秒数：1699194
+每秒钟可以提交的订单数：588
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 243 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 243
+提交每个订单平均耗时的纳秒数：1458689
+每秒钟可以提交的订单数：685
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 365 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 365
+提交每个订单平均耗时的纳秒数：1229948
+每秒钟可以提交的订单数：813
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 548 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 548
+提交每个订单平均耗时的纳秒数：1267606
+每秒钟可以提交的订单数：788
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 822 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 822
+提交每个订单平均耗时的纳秒数：3017377
+每秒钟可以提交的订单数：331
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 1233 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 1233
+提交每个订单平均耗时的纳秒数：2247885
+每秒钟可以提交的订单数：444
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+Process finished with exit code 0
+
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 32 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 32
+提交每个订单平均耗时的纳秒数：6746591
+每秒钟可以提交的订单数：148
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 48 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 48
+提交每个订单平均耗时的纳秒数：4336457
+每秒钟可以提交的订单数：230
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 72 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 72
+提交每个订单平均耗时的纳秒数：3497805
+每秒钟可以提交的订单数：285
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 108 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 108
+提交每个订单平均耗时的纳秒数：2600244
+每秒钟可以提交的订单数：384
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 162 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 162
+提交每个订单平均耗时的纳秒数：1746253
+每秒钟可以提交的订单数：572
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 243 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 243
+提交每个订单平均耗时的纳秒数：1389513
+每秒钟可以提交的订单数：719
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 365 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 365
+提交每个订单平均耗时的纳秒数：1243341
+每秒钟可以提交的订单数：804
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 548 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 548
+提交每个订单平均耗时的纳秒数：1372792
+每秒钟可以提交的订单数：728
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 822 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 822
+提交每个订单平均耗时的纳秒数：2171092
+每秒钟可以提交的订单数：460
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 1233 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 1233
+提交每个订单平均耗时的纳秒数：7906661
+每秒钟可以提交的订单数：126
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+Process finished with exit code 0
+
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 32 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 32
+提交每个订单平均耗时的纳秒数：6746591
+每秒钟可以提交的订单数：148
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 48 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 48
+提交每个订单平均耗时的纳秒数：4336457
+每秒钟可以提交的订单数：230
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 72 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 72
+提交每个订单平均耗时的纳秒数：3497805
+每秒钟可以提交的订单数：285
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 108 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 108
+提交每个订单平均耗时的纳秒数：2600244
+每秒钟可以提交的订单数：384
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 162 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 162
+提交每个订单平均耗时的纳秒数：1746253
+每秒钟可以提交的订单数：572
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 243 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 243
+提交每个订单平均耗时的纳秒数：1389513
+每秒钟可以提交的订单数：719
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 365 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 365
+提交每个订单平均耗时的纳秒数：1243341
+每秒钟可以提交的订单数：804
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 548 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 548
+提交每个订单平均耗时的纳秒数：1372792
+每秒钟可以提交的订单数：728
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 822 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 822
+提交每个订单平均耗时的纳秒数：2171092
+每秒钟可以提交的订单数：460
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 1233 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 1233
+提交每个订单平均耗时的纳秒数：7906661
+每秒钟可以提交的订单数：126
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+Process finished with exit code 0
+
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 32 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 32
+提交每个订单平均耗时的纳秒数：6470178
+每秒钟可以提交的订单数：154
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 48 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 48
+提交每个订单平均耗时的纳秒数：4362858
+每秒钟可以提交的订单数：229
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 72 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 72
+提交每个订单平均耗时的纳秒数：2996930
+每秒钟可以提交的订单数：333
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 108 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 108
+提交每个订单平均耗时的纳秒数：2267738
+每秒钟可以提交的订单数：440
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 162 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 162
+提交每个订单平均耗时的纳秒数：2066848
+每秒钟可以提交的订单数：483
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 243 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 243
+提交每个订单平均耗时的纳秒数：1370195
+每秒钟可以提交的订单数：729
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 365 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 365
+提交每个订单平均耗时的纳秒数：1296324
+每秒钟可以提交的订单数：771
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 548 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 548
+提交每个订单平均耗时的纳秒数：1316845
+每秒钟可以提交的订单数：759
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 822 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 822
+提交每个订单平均耗时的纳秒数：2033657
+每秒钟可以提交的订单数：491
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 1233 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 1233
+提交每个订单平均耗时的纳秒数：9798100
+每秒钟可以提交的订单数：102
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+Process finished with exit code 0
+
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 32 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 32
+提交每个订单平均耗时的纳秒数：6353441
+每秒钟可以提交的订单数：157
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 48 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 48
+提交每个订单平均耗时的纳秒数：4449134
+每秒钟可以提交的订单数：224
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 72 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 72
+提交每个订单平均耗时的纳秒数：3142095
+每秒钟可以提交的订单数：318
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 108 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 108
+提交每个订单平均耗时的纳秒数：2463994
+每秒钟可以提交的订单数：405
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 162 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 162
+提交每个订单平均耗时的纳秒数：1631726
+每秒钟可以提交的订单数：612
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 243 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 243
+提交每个订单平均耗时的纳秒数：1530488
+每秒钟可以提交的订单数：653
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 365 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 365
+提交每个订单平均耗时的纳秒数：1311808
+每秒钟可以提交的订单数：762
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 548 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 548
+提交每个订单平均耗时的纳秒数：1313102
+每秒钟可以提交的订单数：761
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 822 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 822
+提交每个订单平均耗时的纳秒数：1858350
+每秒钟可以提交的订单数：538
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 1233 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 1233
+提交每个订单平均耗时的纳秒数：9817731
+每秒钟可以提交的订单数：101
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+Process finished with exit code 0
+
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 32 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 32
+提交每个订单平均耗时的纳秒数：6647203
+每秒钟可以提交的订单数：150
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 48 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 48
+提交每个订单平均耗时的纳秒数：4659031
+每秒钟可以提交的订单数：214
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 72 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 72
+提交每个订单平均耗时的纳秒数：3267799
+每秒钟可以提交的订单数：306
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 108 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 108
+提交每个订单平均耗时的纳秒数：2311714
+每秒钟可以提交的订单数：432
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 162 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 162
+提交每个订单平均耗时的纳秒数：1789777
+每秒钟可以提交的订单数：558
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 243 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 243
+提交每个订单平均耗时的纳秒数：1392336
+每秒钟可以提交的订单数：718
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 365 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 365
+提交每个订单平均耗时的纳秒数：1298521
+每秒钟可以提交的订单数：770
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 548 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 548
+提交每个订单平均耗时的纳秒数：1425099
+每秒钟可以提交的订单数：701
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 822 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 822
+提交每个订单平均耗时的纳秒数：2433025
+每秒钟可以提交的订单数：411
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+------------------------------ 分隔线 Version006Test : 并发线程数量 1233 ------------------------------
+正在初始化数据库：shop_order_test_version006
+初始化数据库完成：shop_order_test_version006
+初始化hikari的数据源完成
+ForkJoinPool.getCommonPoolParallelism() ： 10000
+forkJoinPool.getParallelism() ： 1233
+提交每个订单平均耗时的纳秒数：8508490
+每秒钟可以提交的订单数：117
+提交订单之前的库存：10000
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：10000
+
+Process finished with exit code 0
+
+
