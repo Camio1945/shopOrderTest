@@ -15,8 +15,6 @@ import static com.erhu1999.shopordertest.version003.JdbcUtil003.getConnectionFro
 
 /**
  * {@link #DISPLAY_NAME}
- * 1、不考虑安全性，即库存可能会小于0
- * 2、全部功能使用JDBC来完成
  *
  * @author HuKaiXuan
  */
