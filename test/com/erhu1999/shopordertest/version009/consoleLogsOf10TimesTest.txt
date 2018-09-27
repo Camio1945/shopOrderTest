@@ -1,0 +1,360 @@
+
+------------------------------ 分隔线 Version009Test0032 : testOf0032Threads ------------------------------
+
+------------------------------ 分隔线  : 同步范围为整个方法 ------------------------------
+
+------------------------------ 分隔线 Version009TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version009
+初始化数据库完成：shop_order_test_version009
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+初始化hikari的数据源完成
+商品库存不足，无法购买：锤子（smartisan ) 坚果 Pro 2S 6G+64GB 炫光蓝 全面屏双摄 全网通4G手机 双卡双待 游戏手机
+提交每个订单平均耗时的纳秒数：100966214
+每秒钟可以提交的订单数：9
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线  : 同步范围为方法中的部分代码 ------------------------------
+
+------------------------------ 分隔线 Version009TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version009
+初始化数据库完成：shop_order_test_version009
+初始化hikari的数据源完成
+商品库存不足，无法购买：锤子（smartisan ) 坚果 Pro 2S 6G+64GB 炫光蓝 全面屏双摄 全网通4G手机 双卡双待 游戏手机
+提交每个订单平均耗时的纳秒数：58230081
+每秒钟可以提交的订单数：17
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+Process finished with exit code 0
+
+
+------------------------------ 分隔线 Version009Test0032 : testOf0032Threads ------------------------------
+
+------------------------------ 分隔线  : 同步范围为整个方法 ------------------------------
+
+------------------------------ 分隔线 Version009TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version009
+初始化数据库完成：shop_order_test_version009
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+初始化hikari的数据源完成
+商品库存不足，无法购买：锤子（smartisan ) 坚果 Pro 2S 6G+64GB 炫光蓝 全面屏双摄 全网通4G手机 双卡双待 游戏手机
+提交每个订单平均耗时的纳秒数：100541634
+每秒钟可以提交的订单数：9
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线  : 同步范围为方法中的部分代码 ------------------------------
+
+------------------------------ 分隔线 Version009TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version009
+初始化数据库完成：shop_order_test_version009
+初始化hikari的数据源完成
+商品库存不足，无法购买：锤子（smartisan ) 坚果 Pro 2S 6G+64GB 炫光蓝 全面屏双摄 全网通4G手机 双卡双待 游戏手机
+提交每个订单平均耗时的纳秒数：69627883
+每秒钟可以提交的订单数：14
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+Process finished with exit code 0
+
+
+------------------------------ 分隔线 Version009Test0032 : testOf0032Threads ------------------------------
+
+------------------------------ 分隔线  : 同步范围为整个方法 ------------------------------
+
+------------------------------ 分隔线 Version009TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version009
+初始化数据库完成：shop_order_test_version009
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+初始化hikari的数据源完成
+商品库存不足，无法购买：锤子（smartisan ) 坚果 Pro 2S 6G+64GB 炫光蓝 全面屏双摄 全网通4G手机 双卡双待 游戏手机
+提交每个订单平均耗时的纳秒数：102395214
+每秒钟可以提交的订单数：9
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线  : 同步范围为方法中的部分代码 ------------------------------
+
+------------------------------ 分隔线 Version009TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version009
+初始化数据库完成：shop_order_test_version009
+初始化hikari的数据源完成
+商品库存不足，无法购买：锤子（smartisan ) 坚果 Pro 2S 6G+64GB 炫光蓝 全面屏双摄 全网通4G手机 双卡双待 游戏手机
+提交每个订单平均耗时的纳秒数：57371613
+每秒钟可以提交的订单数：17
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+Process finished with exit code 0
+
+
+------------------------------ 分隔线 Version009Test0032 : testOf0032Threads ------------------------------
+
+------------------------------ 分隔线  : 同步范围为整个方法 ------------------------------
+
+------------------------------ 分隔线 Version009TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version009
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+初始化数据库完成：shop_order_test_version009
+初始化hikari的数据源完成
+商品库存不足，无法购买：锤子（smartisan ) 坚果 Pro 2S 6G+64GB 炫光蓝 全面屏双摄 全网通4G手机 双卡双待 游戏手机
+提交每个订单平均耗时的纳秒数：105548157
+每秒钟可以提交的订单数：9
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线  : 同步范围为方法中的部分代码 ------------------------------
+
+------------------------------ 分隔线 Version009TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version009
+初始化数据库完成：shop_order_test_version009
+初始化hikari的数据源完成
+商品库存不足，无法购买：锤子（smartisan ) 坚果 Pro 2S 6G+64GB 炫光蓝 全面屏双摄 全网通4G手机 双卡双待 游戏手机
+提交每个订单平均耗时的纳秒数：61221807
+每秒钟可以提交的订单数：16
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+Process finished with exit code 0
+
+
+------------------------------ 分隔线 Version009Test0032 : testOf0032Threads ------------------------------
+
+------------------------------ 分隔线  : 同步范围为整个方法 ------------------------------
+
+------------------------------ 分隔线 Version009TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version009
+初始化数据库完成：shop_order_test_version009
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+初始化hikari的数据源完成
+商品库存不足，无法购买：锤子（smartisan ) 坚果 Pro 2S 6G+64GB 炫光蓝 全面屏双摄 全网通4G手机 双卡双待 游戏手机
+提交每个订单平均耗时的纳秒数：101727708
+每秒钟可以提交的订单数：9
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线  : 同步范围为方法中的部分代码 ------------------------------
+
+------------------------------ 分隔线 Version009TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version009
+初始化数据库完成：shop_order_test_version009
+初始化hikari的数据源完成
+商品库存不足，无法购买：锤子（smartisan ) 坚果 Pro 2S 6G+64GB 炫光蓝 全面屏双摄 全网通4G手机 双卡双待 游戏手机
+提交每个订单平均耗时的纳秒数：80359289
+每秒钟可以提交的订单数：12
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+Process finished with exit code 0
+
+
+------------------------------ 分隔线 Version009Test0032 : testOf0032Threads ------------------------------
+
+------------------------------ 分隔线  : 同步范围为整个方法 ------------------------------
+
+------------------------------ 分隔线 Version009TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version009
+初始化数据库完成：shop_order_test_version009
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+初始化hikari的数据源完成
+商品库存不足，无法购买：锤子（smartisan ) 坚果 Pro 2S 6G+64GB 炫光蓝 全面屏双摄 全网通4G手机 双卡双待 游戏手机
+提交每个订单平均耗时的纳秒数：110584868
+每秒钟可以提交的订单数：9
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线  : 同步范围为方法中的部分代码 ------------------------------
+
+------------------------------ 分隔线 Version009TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version009
+初始化数据库完成：shop_order_test_version009
+初始化hikari的数据源完成
+商品库存不足，无法购买：锤子（smartisan ) 坚果 Pro 2S 6G+64GB 炫光蓝 全面屏双摄 全网通4G手机 双卡双待 游戏手机
+提交每个订单平均耗时的纳秒数：69347552
+每秒钟可以提交的订单数：14
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+Process finished with exit code 0
+
+
+------------------------------ 分隔线 Version009Test0032 : testOf0032Threads ------------------------------
+
+------------------------------ 分隔线  : 同步范围为整个方法 ------------------------------
+
+------------------------------ 分隔线 Version009TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version009
+初始化数据库完成：shop_order_test_version009
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+初始化hikari的数据源完成
+商品库存不足，无法购买：锤子（smartisan ) 坚果 Pro 2S 6G+64GB 炫光蓝 全面屏双摄 全网通4G手机 双卡双待 游戏手机
+提交每个订单平均耗时的纳秒数：99760924
+每秒钟可以提交的订单数：10
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线  : 同步范围为方法中的部分代码 ------------------------------
+
+------------------------------ 分隔线 Version009TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version009
+初始化数据库完成：shop_order_test_version009
+初始化hikari的数据源完成
+商品库存不足，无法购买：锤子（smartisan ) 坚果 Pro 2S 6G+64GB 炫光蓝 全面屏双摄 全网通4G手机 双卡双待 游戏手机
+提交每个订单平均耗时的纳秒数：70411317
+每秒钟可以提交的订单数：14
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+Process finished with exit code 0
+
+
+------------------------------ 分隔线 Version009Test0032 : testOf0032Threads ------------------------------
+
+------------------------------ 分隔线  : 同步范围为整个方法 ------------------------------
+
+------------------------------ 分隔线 Version009TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version009
+初始化数据库完成：shop_order_test_version009
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+初始化hikari的数据源完成
+商品库存不足，无法购买：锤子（smartisan ) 坚果 Pro 2S 6G+64GB 炫光蓝 全面屏双摄 全网通4G手机 双卡双待 游戏手机
+提交每个订单平均耗时的纳秒数：113966242
+每秒钟可以提交的订单数：8
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线  : 同步范围为方法中的部分代码 ------------------------------
+
+------------------------------ 分隔线 Version009TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version009
+初始化数据库完成：shop_order_test_version009
+初始化hikari的数据源完成
+商品库存不足，无法购买：锤子（smartisan ) 坚果 Pro 2S 6G+64GB 炫光蓝 全面屏双摄 全网通4G手机 双卡双待 游戏手机
+提交每个订单平均耗时的纳秒数：66899432
+每秒钟可以提交的订单数：14
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+Process finished with exit code 0
+
+
+------------------------------ 分隔线 Version009Test0032 : testOf0032Threads ------------------------------
+
+------------------------------ 分隔线  : 同步范围为整个方法 ------------------------------
+
+------------------------------ 分隔线 Version009TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version009
+初始化数据库完成：shop_order_test_version009
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+初始化hikari的数据源完成
+商品库存不足，无法购买：锤子（smartisan ) 坚果 Pro 2S 6G+64GB 炫光蓝 全面屏双摄 全网通4G手机 双卡双待 游戏手机
+提交每个订单平均耗时的纳秒数：102407745
+每秒钟可以提交的订单数：9
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线  : 同步范围为方法中的部分代码 ------------------------------
+
+------------------------------ 分隔线 Version009TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version009
+初始化数据库完成：shop_order_test_version009
+初始化hikari的数据源完成
+商品库存不足，无法购买：锤子（smartisan ) 坚果 Pro 2S 6G+64GB 炫光蓝 全面屏双摄 全网通4G手机 双卡双待 游戏手机
+提交每个订单平均耗时的纳秒数：66940336
+每秒钟可以提交的订单数：14
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+Process finished with exit code 0
+
+
+------------------------------ 分隔线 Version009Test0032 : testOf0032Threads ------------------------------
+
+------------------------------ 分隔线  : 同步范围为整个方法 ------------------------------
+
+------------------------------ 分隔线 Version009TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version009
+初始化数据库完成：shop_order_test_version009
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+初始化hikari的数据源完成
+商品库存不足，无法购买：锤子（smartisan ) 坚果 Pro 2S 6G+64GB 炫光蓝 全面屏双摄 全网通4G手机 双卡双待 游戏手机
+提交每个订单平均耗时的纳秒数：107165031
+每秒钟可以提交的订单数：9
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线  : 同步范围为方法中的部分代码 ------------------------------
+
+------------------------------ 分隔线 Version009TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version009
+初始化数据库完成：shop_order_test_version009
+初始化hikari的数据源完成
+商品库存不足，无法购买：锤子（smartisan ) 坚果 Pro 2S 6G+64GB 炫光蓝 全面屏双摄 全网通4G手机 双卡双待 游戏手机
+提交每个订单平均耗时的纳秒数：59082265
+每秒钟可以提交的订单数：16
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+Process finished with exit code 0
+
