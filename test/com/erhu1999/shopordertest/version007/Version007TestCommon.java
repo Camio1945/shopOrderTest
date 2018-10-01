@@ -15,6 +15,7 @@ import static com.erhu1999.shopordertest.common.Config.DB_NAME_PREFIX;
 import static com.erhu1999.shopordertest.common.Config.DB_PWD;
 import static com.erhu1999.shopordertest.common.Config.DB_URL;
 import static com.erhu1999.shopordertest.common.Config.DB_USER;
+import static com.erhu1999.shopordertest.common.Constant.NANO_OF_ONE_SECOND;
 import static com.erhu1999.shopordertest.version007.JdbcUtil007.dropDbIfExistsThenCreateDb;
 import static com.erhu1999.shopordertest.version007.JdbcUtil007.execSqlFile;
 import static com.erhu1999.shopordertest.version007.JdbcUtil007.init;
@@ -132,7 +133,7 @@ class Version007TestCommon extends AbstractTest {
         // 平均时间（纳秒）
         long avgTimeNanos = (endTimeNanos - startTimeNanos) / submitCnt;
         System.out.println("提交每个订单平均耗时的纳秒数：" + avgTimeNanos);
-        System.out.println("每秒钟可以提交的订单数：" + 1000000000L / avgTimeNanos);
+        System.out.println("每秒钟可以提交的订单数：" + NANO_OF_ONE_SECOND / avgTimeNanos);
         // 查询下单之后的商品信息
         goods = queryOneRow("select `stock`,`sales` from `Goods` as t where t.id=" + goodsId);
         // 下单之后的库存

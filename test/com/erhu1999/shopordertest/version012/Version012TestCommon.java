@@ -7,7 +7,9 @@ import com.zaxxer.hikari.HikariDataSource;
 
 import java.io.File;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CountDownLatch;
 
@@ -15,6 +17,7 @@ import static com.erhu1999.shopordertest.common.Config.DB_NAME_PREFIX;
 import static com.erhu1999.shopordertest.common.Config.DB_PWD;
 import static com.erhu1999.shopordertest.common.Config.DB_URL;
 import static com.erhu1999.shopordertest.common.Config.DB_USER;
+import static com.erhu1999.shopordertest.common.Constant.NANO_OF_ONE_SECOND;
 import static com.erhu1999.shopordertest.version012.JdbcUtil012.dropDbIfExistsThenCreateDb;
 import static com.erhu1999.shopordertest.version012.JdbcUtil012.execSqlFile;
 import static com.erhu1999.shopordertest.version012.JdbcUtil012.init;
@@ -33,6 +36,10 @@ class Version012TestCommon extends AbstractTest {
     private static final int CONN_NUMBER = 4000;
     /** hikari数据源 */
     private static HikariDataSource hikariDataSource;
+    /** 平均耗时纳秒数map，key为Class对象(如Version012Normal.class)，value为提交一个订单的平均时间纳秒数的List */
+    public static Map<Class, List<Long>> avgNanoTimeMap = new LinkedHashMap<>();
+    /** 每秒提交订单次数map，key为Class对象(如Version012Normal.class)，value为每秒提交订单的次数的List */
+    public static Map<Class, List<Long>> avgSubmitTimesMap = new LinkedHashMap<>();
 
     static void initDb() throws SQLException {
         printSeparateLine(Version012TestCommon.class.getSimpleName(), new Exception().getStackTrace()[0].getMethodName());
@@ -136,8 +143,15 @@ class Version012TestCommon extends AbstractTest {
         long endTimeNanos = System.nanoTime();
         // 平均时间（纳秒）
         long avgTimeNanos = (endTimeNanos - startTimeNanos) / submitCnt;
+
+        updateAvgNanoTime(versionClazz, avgTimeNanos);
+
+        long avgSubmitTimes = NANO_OF_ONE_SECOND / avgTimeNanos;
+
+        updateAvgSubmitTimes(versionClazz, avgSubmitTimes);
+
         System.out.println("提交每个订单平均耗时的纳秒数：" + avgTimeNanos);
-        System.out.println("每秒钟可以提交的订单数：" + 1000000000L / avgTimeNanos);
+        System.out.println("每秒钟可以提交的订单数：" + NANO_OF_ONE_SECOND / avgTimeNanos);
         // 查询下单之后的商品信息
         goods = queryOneRow("select `stock`,`sales` from `Goods` as t where t.id=" + goodsId);
         // 下单之后的库存
@@ -150,6 +164,24 @@ class Version012TestCommon extends AbstractTest {
         System.out.println("提交订单之后的销量：" + afterSales);
         // 断言
         assertEquals(afterStock == 0, true);
+    }
+
+    /** 更新平均耗时纳秒数 */
+    private static void updateAvgNanoTime(Class versionClazz, long avgTimeNanos) {
+        if (!avgNanoTimeMap.containsKey(versionClazz)) {
+            avgNanoTimeMap.put(versionClazz, new ArrayList<>());
+        }
+        List<Long> list = avgNanoTimeMap.get(versionClazz);
+        list.add(avgTimeNanos);
+    }
+
+    /** 更新每秒平均提交次数 */
+    private static void updateAvgSubmitTimes(Class versionClazz, long avgSubmitTimes) {
+        if (!avgSubmitTimesMap.containsKey(versionClazz)) {
+            avgSubmitTimesMap.put(versionClazz, new ArrayList<>());
+        }
+        List<Long> list = avgSubmitTimesMap.get(versionClazz);
+        list.add(avgSubmitTimes);
     }
 
     /** 记录每个线程应该提交几个订单 */

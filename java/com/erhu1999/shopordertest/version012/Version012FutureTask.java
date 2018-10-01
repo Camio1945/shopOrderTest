@@ -41,26 +41,24 @@ class Version012FutureTask {
         // 4、检查其他参数
         checkParam(userId, goodsId, goodsCount, addrId, user, goods, addr);
         // 5、保存订单到数据库中，并返回订单ID
-        FutureTask<Long> orderId = saveOrder(userId, goodsCount, user, goods, addr);
+        FutureTask<Long> futureTask = new FutureTask(() -> saveOrder(userId, goodsCount, user, goods, addr));
+        new Thread(futureTask).start();
         // 7、更新商品的库存与销量
         updateGoodsStockAndSales(goodsId, goodsCount, goods);
         // 6、保存订单商品到数据库中
-        saveOrderGoods(goodsId, goodsCount, goods, orderId.get());
+        saveOrderGoods(goodsId, goodsCount, goods, futureTask.get());
     }
 
     /** 更新商品的库存与销量 */
-    private void updateGoodsStockAndSales(Long goodsId, int goodsCount, Map<String, Object> goods) {
-        new FutureTask(() -> {
-            StringBuilder updateSqlBuilder = new StringBuilder("update `Goods` set `stock` = `stock` - ")
-                    .append(goodsCount).append(" ").append(", `sales` = `sales` + ").append(goodsCount).append(" ")
-                    .append("where `id` = ").append(goodsId).append(" and (`stock` - ").append(goodsCount).append(") >= 0");
-            String updateSql = updateSqlBuilder.toString();
-            int effectRowCount = executeSql(updateSql);
-            if (effectRowCount == 0) {
-                throw new RuntimeException("商品库存不足，无法购买：" + goods.get("name"));
-            }
-            return null;
-        }).run();
+    private void updateGoodsStockAndSales(Long goodsId, int goodsCount, Map<String, Object> goods) throws SQLException {
+        StringBuilder updateSqlBuilder = new StringBuilder("update `Goods` set `stock` = `stock` - ")
+                .append(goodsCount).append(" ").append(", `sales` = `sales` + ").append(goodsCount).append(" ")
+                .append("where `id` = ").append(goodsId).append(" and (`stock` - ").append(goodsCount).append(") >= 0");
+        String updateSql = updateSqlBuilder.toString();
+        int effectRowCount = executeSql(updateSql);
+        if (effectRowCount == 0) {
+            throw new RuntimeException("商品库存不足，无法购买：" + goods.get("name"));
+        }
     }
 
     /** 执行Sql，返回影响的行数 */
@@ -79,76 +77,69 @@ class Version012FutureTask {
 
     /** 保存订单商品 */
     private void saveOrderGoods(Long goodsId, int goodsCount, Map<String, Object> goods, long orderId) throws SQLException {
-        new FutureTask(() -> {
-            // 商品单价
-            long price = (Long) goods.get("price");
-            String baseSql = "INSERT INTO `OrderGoods`(`orderId`, `goodsId`, `goodsCount`, `goodsPrice`, `goodsImg`, `money`) VALUES (";
-            StringBuilder insertSqlBuilder = new StringBuilder(baseSql)
-                    // 订单ID
-                    .append(orderId).append(",")
-                    // 商品ID
-                    .append(goodsId).append(",")
-                    // 商品数量
-                    .append(goodsCount).append(",")
-                    // 商品单价（单位为分）
-                    .append(price).append(",")
-                    // 商品图片
-                    .append("'").append(goods.get("firstImg")).append("'").append(",")
-                    // 商品总金额（单位为分）
-                    .append(price * goodsCount)
-                    .append(")");
-            String insertSql = insertSqlBuilder.toString();
-            executeSql(insertSql);
-            return null;
-        }).run();
+        // 商品单价
+        long price = (Long) goods.get("price");
+        String baseSql = "INSERT INTO `OrderGoods`(`orderId`, `goodsId`, `goodsCount`, `goodsPrice`, `goodsImg`, `money`) VALUES (";
+        StringBuilder insertSqlBuilder = new StringBuilder(baseSql)
+                // 订单ID
+                .append(orderId).append(",")
+                // 商品ID
+                .append(goodsId).append(",")
+                // 商品数量
+                .append(goodsCount).append(",")
+                // 商品单价（单位为分）
+                .append(price).append(",")
+                // 商品图片
+                .append("'").append(goods.get("firstImg")).append("'").append(",")
+                // 商品总金额（单位为分）
+                .append(price * goodsCount)
+                .append(")");
+        String insertSql = insertSqlBuilder.toString();
+        executeSql(insertSql);
     }
 
     /** 保存订单 */
-    private FutureTask<Long> saveOrder(Long userId, int goodsCount, Map<String, Object> user, Map<String, Object> goods, Map<String, Object> addr) throws Exception {
-        FutureTask<Long> future = new FutureTask<>(() -> {
-            // 商品单价
-            long price = (Long) goods.get("price");
-            String baseSql = "INSERT INTO `Order`(`sn`,`userId`,`name`,`addrMobile`,`addrName`,`addrDetail`,`money`,`status`,`addTime`) VALUES (";
-            StringBuilder insertSqlBuilder = new StringBuilder(baseSql)
-                    // 编号（惟一）
-                    .append("'").append(Math.abs(UUID.randomUUID().hashCode())).append("'").append(",")
-                    // 用户ID
-                    .append(userId).append(",")
-                    // 下单人姓名
-                    .append("'").append(user.get("name")).append("'").append(",")
-                    // 收货地址中的手机号
-                    .append("'").append(addr.get("addrMobile")).append("'").append(",")
-                    // 收货地址中的姓名
-                    .append("'").append(addr.get("addrName")).append("'").append(",")
-                    // 收货地址
-                    .append("'").append(addr.get("addrDetail")).append("'").append(",")
-                    // 订单金额（单位为分）
-                    .append(goodsCount * price).append(",")
-                    // 状态
-                    .append(Constant.ORDER_STATUS_WAIT_PAY).append(",")
-                    // 下单时间
-                    .append(System.currentTimeMillis())
-                    .append(")");
-            String insertSql = insertSqlBuilder.toString();
-            Connection conn = null;
-            Statement stmt = null;
-            ResultSet rs = null;
-            try {
-                conn = getConnectionFromPool();
-                stmt = conn.createStatement();
-                stmt.executeUpdate(insertSql, Statement.RETURN_GENERATED_KEYS);
-                rs = stmt.getGeneratedKeys();
-                if (rs.next()) {
-                    long orderId = rs.getLong(1);
-                    return orderId;
-                }
-            } finally {
-                JdbcUtil012.close(conn, stmt, null, rs);
+    private long saveOrder(Long userId, int goodsCount, Map<String, Object> user, Map<String, Object> goods, Map<String, Object> addr) throws Exception {
+        // 商品单价
+        long price = (Long) goods.get("price");
+        String baseSql = "INSERT INTO `Order`(`sn`,`userId`,`name`,`addrMobile`,`addrName`,`addrDetail`,`money`,`status`,`addTime`) VALUES (";
+        StringBuilder insertSqlBuilder = new StringBuilder(baseSql)
+                // 编号（惟一）
+                .append("'").append(Math.abs(UUID.randomUUID().hashCode())).append("'").append(",")
+                // 用户ID
+                .append(userId).append(",")
+                // 下单人姓名
+                .append("'").append(user.get("name")).append("'").append(",")
+                // 收货地址中的手机号
+                .append("'").append(addr.get("addrMobile")).append("'").append(",")
+                // 收货地址中的姓名
+                .append("'").append(addr.get("addrName")).append("'").append(",")
+                // 收货地址
+                .append("'").append(addr.get("addrDetail")).append("'").append(",")
+                // 订单金额（单位为分）
+                .append(goodsCount * price).append(",")
+                // 状态
+                .append(Constant.ORDER_STATUS_WAIT_PAY).append(",")
+                // 下单时间
+                .append(System.currentTimeMillis())
+                .append(")");
+        String insertSql = insertSqlBuilder.toString();
+        Connection conn = null;
+        Statement stmt = null;
+        ResultSet rs = null;
+        try {
+            conn = getConnectionFromPool();
+            stmt = conn.createStatement();
+            stmt.executeUpdate(insertSql, Statement.RETURN_GENERATED_KEYS);
+            rs = stmt.getGeneratedKeys();
+            if (rs.next()) {
+                long orderId = rs.getLong(1);
+                return orderId;
             }
-            throw new RuntimeException("添加订单失败");
-        });
-        future.run();
-        return future;
+        } finally {
+            JdbcUtil012.close(conn, stmt, null, rs);
+        }
+        throw new RuntimeException("添加订单失败");
     }
 
     /** 检查参数 */
