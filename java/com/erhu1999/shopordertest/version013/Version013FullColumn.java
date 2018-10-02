@@ -1,4 +1,4 @@
-package com.erhu1999.shopordertest.version011;
+package com.erhu1999.shopordertest.version013;
 
 import com.erhu1999.shopordertest.common.Constant;
 
@@ -8,19 +8,20 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Map;
 import java.util.UUID;
+import java.util.concurrent.FutureTask;
 
 import static com.erhu1999.shopordertest.common.AssertUtil.assertBoolIsTrue;
 import static com.erhu1999.shopordertest.common.AssertUtil.assertNotNull;
-import static com.erhu1999.shopordertest.version011.JdbcUtil011.getConnectionFromPool;
+import static com.erhu1999.shopordertest.version013.JdbcUtil013.getConnectionFromPool;
 
 /**
  * {@link #DISPLAY_NAME}
  *
  * @author HuKaiXuan
  */
-class Version011Bad {
+class Version013FullColumn {
     /** 显示名称（类注释），当前类与测试类共用一段描述 */
-    public static final String DISPLAY_NAME = "第011版提交订单";
+    public static final String DISPLAY_NAME = "第013版提交订单";
 
     /**
      * 提交订单
@@ -31,47 +32,46 @@ class Version011Bad {
      * @param addrId     地址ID
      */
     public void submitOrder(Long userId, Long goodsId, int goodsCount, Long addrId) throws Exception {
-        Map<String, Object> goods;
-        synchronized (this) {
-            // 2、查询商品
-            goods = JdbcUtil011.queryOneRow("select `id`,`name`,`price`,`stock`,`sales`,`isOn`,`firstImg` from `Goods` as t where t.id=" + goodsId);
-            // 检查商品参数
-            checkGoodsParam(goodsId, goodsCount, goods);
-            // 7、更新商品的库存与销量
-            updateGoodsStockAndSales(goodsId, goodsCount);
-        }
         // 1、查询用户
-        Map<String, Object> user = JdbcUtil011.queryOneRow("select `id`,`name` from `User` as t where t.id=" + userId);
+        Map<String, Object> user = JdbcUtil013.queryOneRow("select `id`,`name` from `User` as t where t.id=" + userId);
+        // 2、查询商品
+        Map<String, Object> goods = JdbcUtil013.queryOneRow("select `id`,`name`,`price`,`stock`,`sales`,`isOn`,`firstImg`,`intro`,`addTime` from `Goods` as t where t.id=" + goodsId);
         // 3、查询地址
-        Map<String, Object> addr = JdbcUtil011.queryOneRow("select `id`,`userId`,`mobile`,`name`,`addr` from `Addr` as t where t.id=" + addrId);
+        Map<String, Object> addr = JdbcUtil013.queryOneRow("select `id`,`userId`,`mobile`,`name`,`addr` from `Addr` as t where t.id=" + addrId);
         // 4、检查其他参数
-        checkOtherParam(userId, addrId, user, addr);
+        checkParam(userId, goodsId, goodsCount, addrId, user, goods, addr);
         // 5、保存订单到数据库中，并返回订单ID
-        long orderId = saveOrder(userId, goodsCount, user, goods, addr);
+        FutureTask<Long> futureTask = new FutureTask(() -> saveOrder(userId, goodsCount, user, goods, addr));
+        new Thread(futureTask).start();
+        // 7、更新商品的库存与销量
+        updateGoodsStockAndSales(goodsId, goodsCount, goods);
         // 6、保存订单商品到数据库中
-        saveOrderGoods(goodsId, goodsCount, goods, orderId);
+        saveOrderGoods(goodsId, goodsCount, goods, futureTask.get());
     }
 
     /** 更新商品的库存与销量 */
-    private void updateGoodsStockAndSales(Long goodsId, int goodsCount) throws SQLException {
+    private void updateGoodsStockAndSales(Long goodsId, int goodsCount, Map<String, Object> goods) throws SQLException {
         StringBuilder updateSqlBuilder = new StringBuilder("update `Goods` set `stock` = `stock` - ")
                 .append(goodsCount).append(" ").append(", `sales` = `sales` + ").append(goodsCount).append(" ")
-                .append("where `id` = ").append(goodsId);
+                .append("where `id` = ").append(goodsId).append(" and (`stock` - ").append(goodsCount).append(") >= 0");
         String updateSql = updateSqlBuilder.toString();
-        executeSql(updateSql);
+        int effectRowCount = executeSql(updateSql);
+        if (effectRowCount == 0) {
+            throw new RuntimeException("商品库存不足，无法购买：" + goods.get("name"));
+        }
     }
 
-    /** 执行Sql */
-    private void executeSql(String updateSql) throws SQLException {
+    /** 执行Sql，返回影响的行数 */
+    private int executeSql(String updateSql) throws SQLException {
         Connection conn = null;
         Statement stmt = null;
         ResultSet rs = null;
         try {
             conn = getConnectionFromPool();
             stmt = conn.createStatement();
-            stmt.executeUpdate(updateSql);
+            return stmt.executeUpdate(updateSql);
         } finally {
-            JdbcUtil011.close(conn, stmt, null, rs);
+            JdbcUtil013.close(conn, stmt, null, rs);
         }
     }
 
@@ -137,32 +137,28 @@ class Version011Bad {
                 return orderId;
             }
         } finally {
-            JdbcUtil011.close(conn, stmt, null, rs);
+            JdbcUtil013.close(conn, stmt, null, rs);
         }
         throw new RuntimeException("添加订单失败");
     }
 
-    /** 检查商品参数 */
-    private void checkGoodsParam(Long goodsId, int goodsCount, Map<String, Object> goods) {
+    /** 检查参数 */
+    private void checkParam(Long userId, Long goodsId, int goodsCount, Long addrId, Map<String, Object> user, Map<String, Object> goods, Map<String, Object> addr) {
+        assertNotNull(userId, "用户ID不允许为空：userId");
         assertNotNull(goodsId, "商品ID不允许为空：goodsId");
         assertBoolIsTrue(goodsCount > 0, "商品数量不允许小于零：goodsCount");
+        assertNotNull(addrId, "地址ID不允许为空：addrId");
+        assertNotNull(user, "用户不存在：" + userId);
         assertNotNull(goods, "商品不存在：" + goodsId);
+        assertNotNull(addr, "地址不存在：" + addrId);
+        Long addrUserId = (Long) addr.get("userId");
+        assertBoolIsTrue(userId.longValue() == addrUserId.longValue(), "不允许使用其他用户的地址");
         // 商品是否上架（1是0否）
         Integer isOn = (Integer) goods.get("isOn");
         assertBoolIsTrue(isOn.intValue() == 1, "商品已下架，不允许购买");
         // 商品库存是否充足
         Integer stock = (Integer) goods.get("stock");
         assertBoolIsTrue(stock.intValue() >= goodsCount, "商品库存不足，无法购买：" + goods.get("name"));
-    }
-
-    /** 检查其他参数 */
-    private void checkOtherParam(Long userId, Long addrId, Map<String, Object> user, Map<String, Object> addr) {
-        assertNotNull(userId, "用户ID不允许为空：userId");
-        assertNotNull(addrId, "地址ID不允许为空：addrId");
-        assertNotNull(user, "用户不存在：" + userId);
-        assertNotNull(addr, "地址不存在：" + addrId);
-        Long addrUserId = (Long) addr.get("userId");
-        assertBoolIsTrue(userId.longValue() == addrUserId.longValue(), "不允许使用其他用户的地址");
     }
 
 }

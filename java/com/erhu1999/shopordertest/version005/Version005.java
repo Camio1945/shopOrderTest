@@ -106,11 +106,11 @@ class Version005 {
                 // 下单人姓名
                 .append("'").append(user.get("name")).append("'").append(",")
                 // 收货地址中的手机号
-                .append("'").append(addr.get("addrMobile")).append("'").append(",")
+                .append("'").append(addr.get("mobile")).append("'").append(",")
                 // 收货地址中的姓名
-                .append("'").append(addr.get("addrName")).append("'").append(",")
+                .append("'").append(addr.get("name")).append("'").append(",")
                 // 收货地址
-                .append("'").append(addr.get("addrDetail")).append("'").append(",")
+                .append("'").append(addr.get("addr")).append("'").append(",")
                 // 订单金额（单位为分）
                 .append(goodsCount * price).append(",")
                 // 状态

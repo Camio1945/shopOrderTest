@@ -80,7 +80,7 @@ class Version012TestCommon extends AbstractTest {
      * 测试多线程
      *
      * @param threadCount  线程数
-     * @param versionClazz 版本类，只允许以下取值： Version012Bad.class、Version012Normal.class、Version012FutureTask.class
+     * @param versionClazz 版本类
      * @throws Exception
      */
     static void testMultiThread(int threadCount, Class versionClazz) throws Exception {
