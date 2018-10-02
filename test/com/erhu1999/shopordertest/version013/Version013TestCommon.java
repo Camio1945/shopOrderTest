@@ -1,4 +1,4 @@
-package com.erhu1999.shopordertest.version011;
+package com.erhu1999.shopordertest.version013;
 
 import com.erhu1999.shopordertest.common.AbstractTest;
 import com.erhu1999.shopordertest.common.Constant;
@@ -7,7 +7,9 @@ import com.zaxxer.hikari.HikariDataSource;
 
 import java.io.File;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CountDownLatch;
 
@@ -16,27 +18,31 @@ import static com.erhu1999.shopordertest.common.Config.DB_PWD;
 import static com.erhu1999.shopordertest.common.Config.DB_URL;
 import static com.erhu1999.shopordertest.common.Config.DB_USER;
 import static com.erhu1999.shopordertest.common.Constant.NANO_OF_ONE_SECOND;
-import static com.erhu1999.shopordertest.version011.JdbcUtil011.dropDbIfExistsThenCreateDb;
-import static com.erhu1999.shopordertest.version011.JdbcUtil011.execSqlFile;
-import static com.erhu1999.shopordertest.version011.JdbcUtil011.init;
-import static com.erhu1999.shopordertest.version011.JdbcUtil011.queryOneRow;
-import static com.erhu1999.shopordertest.version011.JdbcUtil011.renewUrl;
+import static com.erhu1999.shopordertest.version013.JdbcUtil013.dropDbIfExistsThenCreateDb;
+import static com.erhu1999.shopordertest.version013.JdbcUtil013.execSqlFile;
+import static com.erhu1999.shopordertest.version013.JdbcUtil013.init;
+import static com.erhu1999.shopordertest.version013.JdbcUtil013.queryOneRow;
+import static com.erhu1999.shopordertest.version013.JdbcUtil013.renewUrl;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
- * 版本011的测试用例
+ * 版本013的测试用例
  */
-class Version011TestCommon extends AbstractTest {
+class Version013TestCommon extends AbstractTest {
 
     /** 数据库名称 */
-    private static final String DB_NAME = DB_NAME_PREFIX + "version011";
+    private static final String DB_NAME = DB_NAME_PREFIX + "version013";
     /** 数据库连接数量 */
     private static final int CONN_NUMBER = 4000;
     /** hikari数据源 */
     private static HikariDataSource hikariDataSource;
+    /** 平均耗时纳秒数map，key为Class对象(如Version013LessColumn.class)，value为提交一个订单的平均时间纳秒数的List */
+    public static Map<Class, List<Long>> avgNanoTimeMap = new LinkedHashMap<>();
+    /** 每秒提交订单次数map，key为Class对象(如Version013LessColumn.class)，value为每秒提交订单的次数的List */
+    public static Map<Class, List<Long>> avgSubmitTimesMap = new LinkedHashMap<>();
 
     static void initDb() throws SQLException {
-        printSeparateLine(Version011TestCommon.class.getSimpleName(), new Exception().getStackTrace()[0].getMethodName());
+        printSeparateLine(Version013TestCommon.class.getSimpleName(), new Exception().getStackTrace()[0].getMethodName());
         System.out.println("正在初始化数据库：" + DB_NAME);
         // 数据库数据库连接相关的参数
         init(DB_URL, DB_USER, DB_PWD);
@@ -44,7 +50,7 @@ class Version011TestCommon extends AbstractTest {
         dropDbIfExistsThenCreateDb(DB_NAME);
         // 重新初始化数据库连接相关的参数
         renewUrl(DB_NAME);
-        String sqlFilePath = Version011TestCommon.class.getResource("").getFile() + Version011TestCommon.class.getSimpleName() + ".sql";
+        String sqlFilePath = Version013TestCommon.class.getResource("").getFile() + Version013TestCommon.class.getSimpleName() + ".sql";
         sqlFilePath = new File(sqlFilePath).getAbsolutePath().replaceAll("\\\\", "/");
         execSqlFile(sqlFilePath);
         System.out.println("初始化数据库完成：" + DB_NAME);
@@ -66,7 +72,7 @@ class Version011TestCommon extends AbstractTest {
         config.addDataSourceProperty("prepStmtCacheSqlLimit", "" + (CONN_NUMBER * 2));
         hikariDataSource = new HikariDataSource(config);
         // 切换数据源
-        JdbcUtil011.setDataSource(hikariDataSource);
+        JdbcUtil013.setDataSource(hikariDataSource);
         System.out.println("初始化hikari的数据源完成");
     }
 
@@ -97,7 +103,7 @@ class Version011TestCommon extends AbstractTest {
         if (threadCount < 1 || threadCount > submitCnt) {
             throw new RuntimeException("参数threadCount不正确");
         }
-        if (versionClazz == null || (versionClazz != Version011Bad.class && versionClazz != Version011Good.class && versionClazz != Version011Wrong.class)) {
+        if (versionClazz == null || (versionClazz != Version013LessColumn.class && versionClazz != Version013FullColumn.class)) {
             throw new RuntimeException("参数versionClazz 不正确");
         }
         // 记录每个线程应该提交几个订单
@@ -106,9 +112,8 @@ class Version011TestCommon extends AbstractTest {
         long startTimeNanos = System.nanoTime();
         CountDownLatch startGate = new CountDownLatch(threadCount);
         CountDownLatch endGate = new CountDownLatch(submitCnt);
-        Version011Bad version011Bad = new Version011Bad();
-        Version011Good version011Good = new Version011Good();
-        Version011Wrong version011Wrong = new Version011Wrong();
+        Version013LessColumn version013LessColumn = new Version013LessColumn();
+        Version013FullColumn version013FullColumn = new Version013FullColumn();
         for (int threadIndex = 0; threadIndex < threadCount; threadIndex++) {
             Integer times = threadSubmitTimesMap.get(threadIndex);
             new Thread(() -> {
@@ -120,12 +125,10 @@ class Version011TestCommon extends AbstractTest {
                 for (int i = 0; i < times; i++) {
                     // 调用提交订单的接口
                     try {
-                        if (versionClazz == Version011Bad.class) {
-                            version011Bad.submitOrder(userId, goodsId, goodsCount, addrId);
-                        } else if (versionClazz == Version011Good.class) {
-                            version011Good.submitOrder(userId, goodsId, goodsCount, addrId);
-                        } else if (versionClazz == Version011Wrong.class) {
-                            version011Wrong.submitOrder(userId, goodsId, goodsCount, addrId);
+                        if (versionClazz == Version013LessColumn.class) {
+                            version013LessColumn.submitOrder(userId, goodsId, goodsCount, addrId);
+                        } else if (versionClazz == Version013FullColumn.class) {
+                            version013FullColumn.submitOrder(userId, goodsId, goodsCount, addrId);
                         }
                     } catch (Exception e) {
                         System.out.println(e.getMessage());
@@ -140,6 +143,13 @@ class Version011TestCommon extends AbstractTest {
         long endTimeNanos = System.nanoTime();
         // 平均时间（纳秒）
         long avgTimeNanos = (endTimeNanos - startTimeNanos) / submitCnt;
+
+        updateAvgNanoTime(versionClazz, avgTimeNanos);
+
+        long avgSubmitTimes = NANO_OF_ONE_SECOND / avgTimeNanos;
+
+        updateAvgSubmitTimes(versionClazz, avgSubmitTimes);
+
         System.out.println("提交每个订单平均耗时的纳秒数：" + avgTimeNanos);
         System.out.println("每秒钟可以提交的订单数：" + NANO_OF_ONE_SECOND / avgTimeNanos);
         // 查询下单之后的商品信息
@@ -153,11 +163,25 @@ class Version011TestCommon extends AbstractTest {
         System.out.println("提交订单之后的库存：" + afterStock);
         System.out.println("提交订单之后的销量：" + afterSales);
         // 断言
-        if (versionClazz == Version011Bad.class || versionClazz == Version011Good.class) {
-            assertEquals(afterStock == 0, true);
-        } else if (versionClazz == Version011Wrong.class) {
-            assertEquals(afterStock > 0, true);
+        assertEquals(afterStock == 0, true);
+    }
+
+    /** 更新平均耗时纳秒数 */
+    private static void updateAvgNanoTime(Class versionClazz, long avgTimeNanos) {
+        if (!avgNanoTimeMap.containsKey(versionClazz)) {
+            avgNanoTimeMap.put(versionClazz, new ArrayList<>());
         }
+        List<Long> list = avgNanoTimeMap.get(versionClazz);
+        list.add(avgTimeNanos);
+    }
+
+    /** 更新每秒平均提交次数 */
+    private static void updateAvgSubmitTimes(Class versionClazz, long avgSubmitTimes) {
+        if (!avgSubmitTimesMap.containsKey(versionClazz)) {
+            avgSubmitTimesMap.put(versionClazz, new ArrayList<>());
+        }
+        List<Long> list = avgSubmitTimesMap.get(versionClazz);
+        list.add(avgSubmitTimes);
     }
 
     /** 记录每个线程应该提交几个订单 */
