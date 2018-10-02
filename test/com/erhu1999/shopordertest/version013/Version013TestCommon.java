@@ -41,8 +41,8 @@ class Version013TestCommon extends AbstractTest {
     /** 每秒提交订单次数map，key为Class对象(如Version013LessColumn.class)，value为每秒提交订单的次数的List */
     public static Map<Class, List<Long>> avgSubmitTimesMap = new LinkedHashMap<>();
 
-    static void initDb() throws SQLException {
-        printSeparateLine(Version013TestCommon.class.getSimpleName(), new Exception().getStackTrace()[0].getMethodName());
+    static void initDb(String sqlFileName) throws SQLException {
+        printSeparateLine(sqlFileName, new Exception().getStackTrace()[0].getMethodName());
         System.out.println("正在初始化数据库：" + DB_NAME);
         // 数据库数据库连接相关的参数
         init(DB_URL, DB_USER, DB_PWD);
@@ -50,7 +50,7 @@ class Version013TestCommon extends AbstractTest {
         dropDbIfExistsThenCreateDb(DB_NAME);
         // 重新初始化数据库连接相关的参数
         renewUrl(DB_NAME);
-        String sqlFilePath = Version013TestCommon.class.getResource("").getFile() + Version013TestCommon.class.getSimpleName() + ".sql";
+        String sqlFilePath = Version013TestCommon.class.getResource("").getFile() + sqlFileName;
         sqlFilePath = new File(sqlFilePath).getAbsolutePath().replaceAll("\\\\", "/");
         execSqlFile(sqlFilePath);
         System.out.println("初始化数据库完成：" + DB_NAME);
