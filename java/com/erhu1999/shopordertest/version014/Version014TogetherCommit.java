@@ -134,6 +134,9 @@ class Version014TogetherCommit {
                 long orderId = rs.getLong(1);
                 return orderId;
             }
+        } catch (Exception e) {
+            conn.rollback();
+            throw e;
         } finally {
             JdbcUtil014.close(null, stmt, null, rs);
         }
