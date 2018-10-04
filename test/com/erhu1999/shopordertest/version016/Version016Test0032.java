@@ -1,4 +1,4 @@
-package com.erhu1999.shopordertest.version015;
+package com.erhu1999.shopordertest.version016;
 
 import com.erhu1999.shopordertest.common.AbstractTest;
 import org.junit.jupiter.api.DisplayName;
@@ -10,28 +10,28 @@ import java.util.Set;
 import static com.erhu1999.shopordertest.common.Constant.RANDOM;
 
 /**
- * 版本015的测试用例
+ * 版本016的测试用例
  */
-class Version015Test0032 extends AbstractTest {
+class Version016Test0032 extends AbstractTest {
 
     @Test
-    @DisplayName("第015版提交订单 多线程测试 线程数 0032")
+    @DisplayName("第016版提交订单 多线程测试 线程数 0032")
     void testOf0032Threads() throws Exception {
         for (int i = 0; i < 10; i++) {
             printSeparateLine(this.getClass().getSimpleName(), new Exception().getStackTrace()[0].getMethodName() + " 第 " + (i + 1) + " 次测试");
             // 用于保证顺序是随机的
             if (RANDOM.nextInt(2) == 0) {
-                testVersion015ParamAddr();
-                testVersion015QueryAddr();
+                testVersion016ParamAddr();
+                testVersion016WithCache();
             } else {
-                testVersion015QueryAddr();
-                testVersion015ParamAddr();
+                testVersion016WithCache();
+                testVersion016ParamAddr();
             }
         }
         printSeparateLine("", "最终测试结果");
-        Set<Class> clazzSet = Version015TestCommon.avgNanoTimeMap.keySet();
+        Set<Class> clazzSet = Version016TestCommon.avgNanoTimeMap.keySet();
         for (Class clazz : clazzSet) {
-            List<Long> list = Version015TestCommon.avgNanoTimeMap.get(clazz);
+            List<Long> list = Version016TestCommon.avgNanoTimeMap.get(clazz);
             double avgNanoTime = list.stream()
                     .mapToLong(Long::longValue)
                     .average()
@@ -39,9 +39,9 @@ class Version015Test0032 extends AbstractTest {
             System.out.println(clazz.getSimpleName() + " 提交每个订单平均耗时的纳秒数： " + (long) avgNanoTime);
         }
         System.out.println();
-        clazzSet = Version015TestCommon.avgSubmitTimesMap.keySet();
+        clazzSet = Version016TestCommon.avgSubmitTimesMap.keySet();
         for (Class clazz : clazzSet) {
-            List<Long> list = Version015TestCommon.avgSubmitTimesMap.get(clazz);
+            List<Long> list = Version016TestCommon.avgSubmitTimesMap.get(clazz);
             double avgSubmitTimes = list.stream()
                     .mapToLong(Long::longValue)
                     .average()
@@ -51,19 +51,19 @@ class Version015Test0032 extends AbstractTest {
 
     }
 
-    /** 测试把地址信息作为参数传递 */
-    private void testVersion015ParamAddr() throws Exception {
-        printSeparateLine("", Version015ParamAddr.class.getSimpleName());
-        Version015TestCommon.initDb();
-        Version015TestCommon.testMultiThread(32, Version015ParamAddr.class);
-        Version015TestCommon.closeAllConnection();
+    /** 测试商品没有缓存 */
+    private void testVersion016ParamAddr() throws Exception {
+        printSeparateLine("", Version016NoCache.class.getSimpleName());
+        Version016TestCommon.initDb();
+        Version016TestCommon.testMultiThread(32, Version016NoCache.class);
+        Version016TestCommon.closeAllConnection();
     }
 
-    /** 测试从数据库中查询收货地址 */
-    private void testVersion015QueryAddr() throws Exception {
-        printSeparateLine("", Version015QueryAddr.class.getSimpleName());
-        Version015TestCommon.initDb();
-        Version015TestCommon.testMultiThread(32, Version015QueryAddr.class);
-        Version015TestCommon.closeAllConnection();
+    /** 测试商品有缓存 */
+    private void testVersion016WithCache() throws Exception {
+        printSeparateLine("", Version016WithCache.class.getSimpleName());
+        Version016TestCommon.initDb();
+        Version016TestCommon.testMultiThread(32, Version016WithCache.class);
+        Version016TestCommon.closeAllConnection();
     }
 }
