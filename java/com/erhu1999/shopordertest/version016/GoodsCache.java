@@ -28,7 +28,7 @@ class GoodsCache {
      * @param goodsId 商品ID
      */
     public static void initCache(long goodsId) {
-        Map<String, Object> goods = JdbcUtil016.queryOneRow("select `id`,`name`,`price`,`stock`,`isOn`,`firstImg` from `Goods` as t where t.id=" + goodsId);
+        Map<String, Object> goods = JdbcUtil016.queryOneRow("select `id`,`name`,`price`,`isOn`,`firstImg` from `Goods` as t where t.id=" + goodsId);
         goodsCacheMap.put(goodsId, goods);
     }
 }
