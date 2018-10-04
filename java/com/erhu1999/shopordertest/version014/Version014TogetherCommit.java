@@ -41,13 +41,18 @@ class Version014TogetherCommit {
         checkParam(userId, goodsId, goodsCount, addrId, user, goods, addr);
         Connection conn = JdbcUtil014.getConnectionFromPool();
         conn.setAutoCommit(false);
-        // 5、保存订单到数据库中，并返回订单ID
-        FutureTask<Long> futureTask = new FutureTask(() -> saveOrder(conn, userId, goodsCount, user, goods, addr));
-        new Thread(futureTask).start();
-        // 7、更新商品的库存与销量
-        updateGoodsStockAndSales(conn, goodsId, goodsCount, goods);
-        // 6、保存订单商品到数据库中
-        saveOrderGoods(conn, goodsId, goodsCount, goods, futureTask.get());
+        try {
+            // 5、保存订单到数据库中，并返回订单ID
+            FutureTask<Long> futureTask = new FutureTask(() -> saveOrder(conn, userId, goodsCount, user, goods, addr));
+            new Thread(futureTask).start();
+            // 7、更新商品的库存与销量
+            updateGoodsStockAndSales(conn, goodsId, goodsCount, goods);
+            // 6、保存订单商品到数据库中
+            saveOrderGoods(conn, goodsId, goodsCount, goods, futureTask.get());
+        } catch (Exception e) {
+            conn.rollback();
+            throw e;
+        }
         conn.commit();
     }
 
@@ -134,9 +139,6 @@ class Version014TogetherCommit {
                 long orderId = rs.getLong(1);
                 return orderId;
             }
-        } catch (Exception e) {
-            conn.rollback();
-            throw e;
         } finally {
             JdbcUtil014.close(null, stmt, null, rs);
         }
