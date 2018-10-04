@@ -1,0 +1,293 @@
+"D:\Program Files\Java\jdk1.8.0_171\bin\java.exe" -ea -Didea.test.cyclic.buffer.size=1048576 "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.1\lib\idea_rt.jar=37580:C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.1\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.1\lib\idea_rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.1\plugins\junit\lib\junit-rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2018.2.1\plugins\junit\lib\junit5-rt.jar;D:\Program Files\Java\jdk1.8.0_171\jre\lib\charsets.jar;D:\Program Files\Java\jdk1.8.0_171\jre\lib\deploy.jar;D:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\access-bridge-64.jar;D:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\cldrdata.jar;D:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\dnsns.jar;D:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\jaccess.jar;D:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\jfxrt.jar;D:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\localedata.jar;D:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\nashorn.jar;D:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\sunec.jar;D:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\sunjce_provider.jar;D:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\sunmscapi.jar;D:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\sunpkcs11.jar;D:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\zipfs.jar;D:\Program Files\Java\jdk1.8.0_171\jre\lib\javaws.jar;D:\Program Files\Java\jdk1.8.0_171\jre\lib\jce.jar;D:\Program Files\Java\jdk1.8.0_171\jre\lib\jfr.jar;D:\Program Files\Java\jdk1.8.0_171\jre\lib\jfxswt.jar;D:\Program Files\Java\jdk1.8.0_171\jre\lib\jsse.jar;D:\Program Files\Java\jdk1.8.0_171\jre\lib\management-agent.jar;D:\Program Files\Java\jdk1.8.0_171\jre\lib\plugin.jar;D:\Program Files\Java\jdk1.8.0_171\jre\lib\resources.jar;D:\Program Files\Java\jdk1.8.0_171\jre\lib\rt.jar;D:\allCode\mr_huKaiXuan\github\shopOrderTest\target\test-classes;D:\allCode\mr_huKaiXuan\github\shopOrderTest\target\classes;D:\maven\repository\org\junit\platform\junit-platform-launcher\1.3.0-M1\junit-platform-launcher-1.3.0-M1.jar;D:\maven\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;D:\maven\repository\org\junit\platform\junit-platform-engine\1.3.0-M1\junit-platform-engine-1.3.0-M1.jar;D:\maven\repository\org\junit\platform\junit-platform-commons\1.3.0-M1\junit-platform-commons-1.3.0-M1.jar;D:\maven\repository\org\opentest4j\opentest4j\1.1.0\opentest4j-1.1.0.jar;D:\maven\repository\org\junit\jupiter\junit-jupiter-engine\5.3.0-M1\junit-jupiter-engine-5.3.0-M1.jar;D:\maven\repository\org\junit\jupiter\junit-jupiter-api\5.3.0-M1\junit-jupiter-api-5.3.0-M1.jar;D:\maven\repository\mysql\mysql-connector-java\8.0.11\mysql-connector-java-8.0.11.jar;D:\maven\repository\com\google\protobuf\protobuf-java\2.6.0\protobuf-java-2.6.0.jar;D:\maven\repository\com\alibaba\druid\1.1.10\druid-1.1.10.jar;D:\maven\repository\com\zaxxer\HikariCP\3.2.0\HikariCP-3.2.0.jar;D:\maven\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar" com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 -junit5 com.erhu1999.shopordertest.version016.Version016Test0032
+
+------------------------------ 分隔线 Version016Test0032 : testOf0032Threads 第 1 次测试 ------------------------------
+
+------------------------------ 分隔线  : Version016NoCache ------------------------------
+
+------------------------------ 分隔线 Version016TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version016
+初始化数据库完成：shop_order_test_version016
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+初始化hikari的数据源完成
+提交每个订单平均耗时的纳秒数：4808681
+每秒钟可以提交的订单数：207
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线  : Version016WithCache ------------------------------
+
+------------------------------ 分隔线 Version016TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version016
+初始化数据库完成：shop_order_test_version016
+初始化hikari的数据源完成
+提交每个订单平均耗时的纳秒数：4636561
+每秒钟可以提交的订单数：215
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线 Version016Test0032 : testOf0032Threads 第 2 次测试 ------------------------------
+
+------------------------------ 分隔线  : Version016NoCache ------------------------------
+
+------------------------------ 分隔线 Version016TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version016
+初始化数据库完成：shop_order_test_version016
+初始化hikari的数据源完成
+提交每个订单平均耗时的纳秒数：4259316
+每秒钟可以提交的订单数：234
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线  : Version016WithCache ------------------------------
+
+------------------------------ 分隔线 Version016TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version016
+初始化数据库完成：shop_order_test_version016
+初始化hikari的数据源完成
+提交每个订单平均耗时的纳秒数：4005614
+每秒钟可以提交的订单数：249
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线 Version016Test0032 : testOf0032Threads 第 3 次测试 ------------------------------
+
+------------------------------ 分隔线  : Version016WithCache ------------------------------
+
+------------------------------ 分隔线 Version016TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version016
+初始化数据库完成：shop_order_test_version016
+初始化hikari的数据源完成
+提交每个订单平均耗时的纳秒数：4466465
+每秒钟可以提交的订单数：223
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线  : Version016NoCache ------------------------------
+
+------------------------------ 分隔线 Version016TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version016
+初始化数据库完成：shop_order_test_version016
+初始化hikari的数据源完成
+提交每个订单平均耗时的纳秒数：5283978
+每秒钟可以提交的订单数：189
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线 Version016Test0032 : testOf0032Threads 第 4 次测试 ------------------------------
+
+------------------------------ 分隔线  : Version016NoCache ------------------------------
+
+------------------------------ 分隔线 Version016TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version016
+初始化数据库完成：shop_order_test_version016
+初始化hikari的数据源完成
+提交每个订单平均耗时的纳秒数：4817112
+每秒钟可以提交的订单数：207
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线  : Version016WithCache ------------------------------
+
+------------------------------ 分隔线 Version016TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version016
+初始化数据库完成：shop_order_test_version016
+初始化hikari的数据源完成
+提交每个订单平均耗时的纳秒数：4609150
+每秒钟可以提交的订单数：216
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线 Version016Test0032 : testOf0032Threads 第 5 次测试 ------------------------------
+
+------------------------------ 分隔线  : Version016WithCache ------------------------------
+
+------------------------------ 分隔线 Version016TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version016
+初始化数据库完成：shop_order_test_version016
+初始化hikari的数据源完成
+提交每个订单平均耗时的纳秒数：4469665
+每秒钟可以提交的订单数：223
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线  : Version016NoCache ------------------------------
+
+------------------------------ 分隔线 Version016TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version016
+初始化数据库完成：shop_order_test_version016
+初始化hikari的数据源完成
+提交每个订单平均耗时的纳秒数：4276274
+每秒钟可以提交的订单数：233
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线 Version016Test0032 : testOf0032Threads 第 6 次测试 ------------------------------
+
+------------------------------ 分隔线  : Version016WithCache ------------------------------
+
+------------------------------ 分隔线 Version016TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version016
+初始化数据库完成：shop_order_test_version016
+初始化hikari的数据源完成
+提交每个订单平均耗时的纳秒数：4934247
+每秒钟可以提交的订单数：202
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线  : Version016NoCache ------------------------------
+
+------------------------------ 分隔线 Version016TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version016
+初始化数据库完成：shop_order_test_version016
+初始化hikari的数据源完成
+提交每个订单平均耗时的纳秒数：4369829
+每秒钟可以提交的订单数：228
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线 Version016Test0032 : testOf0032Threads 第 7 次测试 ------------------------------
+
+------------------------------ 分隔线  : Version016NoCache ------------------------------
+
+------------------------------ 分隔线 Version016TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version016
+初始化数据库完成：shop_order_test_version016
+初始化hikari的数据源完成
+提交每个订单平均耗时的纳秒数：5026017
+每秒钟可以提交的订单数：198
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线  : Version016WithCache ------------------------------
+
+------------------------------ 分隔线 Version016TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version016
+初始化数据库完成：shop_order_test_version016
+初始化hikari的数据源完成
+提交每个订单平均耗时的纳秒数：3955748
+每秒钟可以提交的订单数：252
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线 Version016Test0032 : testOf0032Threads 第 8 次测试 ------------------------------
+
+------------------------------ 分隔线  : Version016NoCache ------------------------------
+
+------------------------------ 分隔线 Version016TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version016
+初始化数据库完成：shop_order_test_version016
+初始化hikari的数据源完成
+提交每个订单平均耗时的纳秒数：4539497
+每秒钟可以提交的订单数：220
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线  : Version016WithCache ------------------------------
+
+------------------------------ 分隔线 Version016TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version016
+初始化数据库完成：shop_order_test_version016
+初始化hikari的数据源完成
+提交每个订单平均耗时的纳秒数：3599351
+每秒钟可以提交的订单数：277
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线 Version016Test0032 : testOf0032Threads 第 9 次测试 ------------------------------
+
+------------------------------ 分隔线  : Version016NoCache ------------------------------
+
+------------------------------ 分隔线 Version016TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version016
+初始化数据库完成：shop_order_test_version016
+初始化hikari的数据源完成
+提交每个订单平均耗时的纳秒数：4783000
+每秒钟可以提交的订单数：209
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线  : Version016WithCache ------------------------------
+
+------------------------------ 分隔线 Version016TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version016
+初始化数据库完成：shop_order_test_version016
+初始化hikari的数据源完成
+提交每个订单平均耗时的纳秒数：4226912
+每秒钟可以提交的订单数：236
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线 Version016Test0032 : testOf0032Threads 第 10 次测试 ------------------------------
+
+------------------------------ 分隔线  : Version016NoCache ------------------------------
+
+------------------------------ 分隔线 Version016TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version016
+初始化数据库完成：shop_order_test_version016
+初始化hikari的数据源完成
+提交每个订单平均耗时的纳秒数：4577089
+每秒钟可以提交的订单数：218
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线  : Version016WithCache ------------------------------
+
+------------------------------ 分隔线 Version016TestCommon : initDb ------------------------------
+正在初始化数据库：shop_order_test_version016
+初始化数据库完成：shop_order_test_version016
+初始化hikari的数据源完成
+提交每个订单平均耗时的纳秒数：4400640
+每秒钟可以提交的订单数：227
+提交订单之前的库存：320
+提交订单之前的销量：0
+提交订单之后的库存：0
+提交订单之后的销量：320
+
+------------------------------ 分隔线  : 最终测试结果 ------------------------------
+Version016NoCache 提交每个订单平均耗时的纳秒数： 4674079
+Version016WithCache 提交每个订单平均耗时的纳秒数： 4330435
+
+Version016NoCache 每秒钟可以提交的订单数： 214
+Version016WithCache 每秒钟可以提交的订单数： 232
+
+Process finished with exit code 0
