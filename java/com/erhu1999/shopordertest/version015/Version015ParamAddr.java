@@ -30,7 +30,7 @@ class Version015ParamAddr {
      * @param goodsCount 商品数量
      * @param addrMobile 收货地址中的手机号
      * @param addrName   收货地址中的姓名
-     * @param addrDetail 收货地址中的姓名
+     * @param addrDetail 收货地址详情
      */
     public void submitOrder(Long userId, Long goodsId, int goodsCount, String addrMobile, String addrName, String addrDetail) throws Exception {
         // 1、查询用户
