@@ -50,7 +50,6 @@ class Version016WithCache {
             // 6、保存订单商品到数据库中
             saveOrderGoods(conn, goodsId, goodsCount, goods, futureTask.get());
             conn.commit();
-            GoodsCache.subStock(goodsId, goodsCount);
         } catch (Exception e) {
             conn.rollback();
             throw e;
@@ -159,9 +158,6 @@ class Version016WithCache {
         // 商品是否上架（1是0否）
         Integer isOn = (Integer) goods.get("isOn");
         assertBoolIsTrue(isOn.intValue() == 1, "商品已下架，不允许购买");
-        // 商品库存是否充足
-        Integer stock = (Integer) goods.get("stock");
-        assertBoolIsTrue(stock.intValue() >= goodsCount, "商品库存不足，无法购买：" + goods.get("name"));
     }
 
 }
