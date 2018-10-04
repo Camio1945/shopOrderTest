@@ -104,7 +104,7 @@ class Version014TestCommon extends AbstractTest {
             throw new RuntimeException("参数threadCount不正确");
         }
         if (versionClazz == null || (versionClazz != Version014TogetherCommit.class && versionClazz != Version014SeparateCommit.class)) {
-            throw new RuntimeException("参数versionClazz 不正确");
+            throw new RuntimeException("参数versionClazz不正确");
         }
         // 记录每个线程应该提交几个订单
         Map<Integer, Integer> threadSubmitTimesMap = getThreadSubmitTimesMap(threadCount, submitCnt);
