@@ -49,11 +49,11 @@ class Version014TogetherCommit {
             updateGoodsStockAndSales(conn, goodsId, goodsCount, goods);
             // 6、保存订单商品到数据库中
             saveOrderGoods(conn, goodsId, goodsCount, goods, futureTask.get());
+            conn.commit();
         } catch (Exception e) {
             conn.rollback();
             throw e;
         }
-        conn.commit();
     }
 
     /** 更新商品的库存与销量 */
