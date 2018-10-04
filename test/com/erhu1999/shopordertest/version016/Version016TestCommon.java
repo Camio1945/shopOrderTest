@@ -86,7 +86,9 @@ class Version016TestCommon extends AbstractTest {
     static void testMultiThread(int threadCount, Class versionClazz) throws Exception {
         // 商品ID
         Long goodsId = 1L;
-        GoodsCache.initCache(goodsId);
+        if (versionClazz == Version016WithCache.class) {
+            GoodsCache.initCache(goodsId);
+        }
         // 查询商品信息
         Map<String, Object> goods = queryOneRow("select `stock`,`sales` from `Goods` as t where t.id=" + goodsId);
         // 初始库存
