@@ -12,10 +12,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a5ba514-25ec-4611-9eb3-c208839ed268" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/java/com/erhu1999/shopordertest/common/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/com/erhu1999/shopordertest/common/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/config.properties" afterDir="false" />
-    </list>
+    <list default="true" id="7a5ba514-25ec-4611-9eb3-c208839ed268" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -301,6 +298,9 @@
         </selected-state>
       </profile-state>
     </entry>
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -781,7 +781,7 @@
       <workItem from="1538711779347" duration="12534000" />
       <workItem from="1623112478391" duration="2443000" />
       <workItem from="1623200124417" duration="270000" />
-      <workItem from="1623286326762" duration="345000" />
+      <workItem from="1623286326762" duration="1055000" />
     </task>
     <servers />
   </component>
