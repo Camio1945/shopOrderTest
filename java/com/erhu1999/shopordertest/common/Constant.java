@@ -13,7 +13,7 @@ public class Constant {
     /** 数据库驱动类名 */
     public static final String DRIVER_CLASS_NAME = "com.mysql.cj.jdbc.Driver";
     /** 数据库连接URL参数 */
-    public static final String DB_URL_PARAM = "?useUnicode=true&characterEncoding=UTF-8&useSSL=false";
+    public static final String DB_URL_PARAM = "?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8";
     /** 随机数 */
     public static final Random RANDOM = new Random();
     /** 1秒钟对应的纳秒数 */

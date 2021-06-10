@@ -8,10 +8,14 @@
       <artifact name="shopOrderTest:war exploded" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a5ba514-25ec-4611-9eb3-c208839ed268" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="7a5ba514-25ec-4611-9eb3-c208839ed268" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/java/com/erhu1999/shopordertest/common/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/com/erhu1999/shopordertest/common/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/config.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,37 +23,6 @@
   </component>
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/erhu1999/shopordertest/version017/Version017Test0032.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/com/erhu1999/shopordertest/version017/consoleLogsOf10TimesTest.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="346" column="18" lean-forward="true" selection-start-line="346" selection-start-column="18" selection-end-line="346" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/erhu1999/shopordertest/common/AbstractTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="63" column="56" lean-forward="true" selection-start-line="63" selection-start-column="56" selection-end-line="63" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -136,6 +109,17 @@
       <dir>D:\allCode\mr_huKaiXuan\github\shopOrderTest\test\com\erhu1999\shopordertest\version016</dir>
       <dir>D:\allCode\mr_huKaiXuan\github\shopOrderTest\test\com\erhu1999\shopordertest\version017</dir>
     </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="GradleLocalSettings">
     <option name="modificationStamps">
@@ -239,11 +223,6 @@
         <option name="userSettingsFile" value="D:\maven\settings.xml" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -272,6 +251,7 @@
     <option name="width" value="3860" />
     <option name="height" value="1100" />
   </component>
+  <component name="ProjectId" id="1tdwrqrwlMmRFZxa4JWn9xWP8EY" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
       <profile-state>
@@ -407,6 +387,13 @@
       <pane id="PackagesPane" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -415,11 +402,17 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="editorconfig.notification" value="[]&#10;" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/test/com/erhu1999/shopordertest" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="options.lastSelected" value="preferences.pluginManager" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -427,6 +420,11 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -448,19 +446,7 @@
       <recent name="D:\allCode\mr_huKaiXuan\github\shopOrderTest\test\com\erhu1999\shopordertest\version006" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="JUnit.Version017Test0032">
+  <component name="RunManager" selected="JUnit.Version017Test0032.testOf0032Threads">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -477,10 +463,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Version014Test0032" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Version001Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shopOrderTest" />
-      <option name="PACKAGE_NAME" value="com.erhu1999.shopordertest.version014" />
-      <option name="MAIN_CLASS_NAME" value="com.erhu1999.shopordertest.version014.Version014Test0032" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.erhu1999.shopordertest.version001.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.erhu1999.shopordertest.version001" />
+      <option name="MAIN_CLASS_NAME" value="com.erhu1999.shopordertest.version001.Version001Test" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -490,10 +493,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Version015Test0032" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Version002Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shopOrderTest" />
-      <option name="PACKAGE_NAME" value="com.erhu1999.shopordertest.version015" />
-      <option name="MAIN_CLASS_NAME" value="com.erhu1999.shopordertest.version015.Version015Test0032" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.erhu1999.shopordertest.version002.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.erhu1999.shopordertest.version002" />
+      <option name="MAIN_CLASS_NAME" value="com.erhu1999.shopordertest.version002.Version002Test" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -516,12 +525,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Version016Test0032.testOf0032Threads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Version017Test0032" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shopOrderTest" />
-      <option name="PACKAGE_NAME" value="com.erhu1999.shopordertest.version016" />
-      <option name="MAIN_CLASS_NAME" value="com.erhu1999.shopordertest.version016.Version016Test0032" />
-      <option name="METHOD_NAME" value="testOf0032Threads" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.erhu1999.shopordertest.version017" />
+      <option name="MAIN_CLASS_NAME" value="com.erhu1999.shopordertest.version017.Version017Test0032" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
@@ -530,11 +538,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Version017Test0032" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Version017Test0032.testOf0032Threads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shopOrderTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.erhu1999.shopordertest.version017.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="PACKAGE_NAME" value="com.erhu1999.shopordertest.version017" />
       <option name="MAIN_CLASS_NAME" value="com.erhu1999.shopordertest.version017.Version017Test0032" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="testOf0032Threads" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
@@ -667,23 +682,24 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.Version014Test0032" />
-      <item itemvalue="JUnit.Version015Test0032" />
-      <item itemvalue="JUnit.Version016Test0032.testOf0032Threads" />
       <item itemvalue="JUnit.Version016Test0032" />
       <item itemvalue="JUnit.Version017Test0032" />
+      <item itemvalue="JUnit.Version001Test" />
+      <item itemvalue="JUnit.Version002Test" />
       <item itemvalue="Tomcat Server.Unnamed" />
+      <item itemvalue="JUnit.Version017Test0032.testOf0032Threads" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Version017Test0032.testOf0032Threads" />
+        <item itemvalue="JUnit.Version002Test" />
+        <item itemvalue="JUnit.Version001Test" />
         <item itemvalue="JUnit.Version017Test0032" />
         <item itemvalue="JUnit.Version016Test0032" />
-        <item itemvalue="JUnit.Version016Test0032.testOf0032Threads" />
-        <item itemvalue="JUnit.Version015Test0032" />
-        <item itemvalue="JUnit.Version014Test0032" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="7a5ba514-25ec-4611-9eb3-c208839ed268" name="Default Changelist" comment="" />
@@ -763,6 +779,9 @@
       <workItem from="1538636483145" duration="9272000" />
       <workItem from="1538706803744" duration="3775000" />
       <workItem from="1538711779347" duration="12534000" />
+      <workItem from="1623112478391" duration="2443000" />
+      <workItem from="1623200124417" duration="270000" />
+      <workItem from="1623286326762" duration="345000" />
     </task>
     <servers />
   </component>
@@ -876,12 +895,18 @@
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+    <option name="version" value="3" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/com/erhu1999/shopordertest/version001/Version001Test.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="e.printStackTrace();" language="JAVA" />
