@@ -12,7 +12,13 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a5ba514-25ec-4611-9eb3-c208839ed268" name="Default Changelist" comment="" />
+    <list default="true" id="7a5ba514-25ec-4611-9eb3-c208839ed268" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/java/com/erhu1999/shopordertest/version017/Version017StringId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/erhu1999/shopordertest/version017/Version017StringId.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/erhu1999/shopordertest/version017/Version017Test0032.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/erhu1999/shopordertest/version017/Version017Test0032.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/erhu1999/shopordertest/version017/Version017TestCommon.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/erhu1999/shopordertest/version017/Version017TestCommon.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -301,6 +307,7 @@
   </component>
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -395,6 +402,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="GoToFile.includeJavaFiles" value="false" />
@@ -409,7 +417,7 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="editorconfig.notification" value="[]&#10;" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/test/com/erhu1999/shopordertest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test/com/erhu1999/shopordertest/version017" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -419,6 +427,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -427,6 +436,13 @@
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\git\shopOrderTest\test\com\erhu1999\shopordertest\version017" />
+      <recent name="D:\allCode\mr_huKaiXuan\github\shopOrderTest\test\com\erhu1999\shopordertest\version017" />
+      <recent name="D:\allCode\mr_huKaiXuan\github\shopOrderTest\test\com\erhu1999\shopordertest\version013" />
+      <recent name="D:\allCode\mr_huKaiXuan\github\shopOrderTest\test\com\erhu1999\shopordertest\version008" />
+      <recent name="D:\allCode\mr_huKaiXuan\github\shopOrderTest\test\com\erhu1999\shopordertest" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.erhu1999.shopordertest.version002" />
       <recent name="com.erhu1999.shopordertest.version001" />
@@ -438,15 +454,8 @@
       <recent name="com.erhu1999.shopordertest.version013" />
       <recent name="com.erhu1999.shopordertest.common" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\allCode\mr_huKaiXuan\github\shopOrderTest\test\com\erhu1999\shopordertest\version017" />
-      <recent name="D:\allCode\mr_huKaiXuan\github\shopOrderTest\test\com\erhu1999\shopordertest\version013" />
-      <recent name="D:\allCode\mr_huKaiXuan\github\shopOrderTest\test\com\erhu1999\shopordertest\version008" />
-      <recent name="D:\allCode\mr_huKaiXuan\github\shopOrderTest\test\com\erhu1999\shopordertest" />
-      <recent name="D:\allCode\mr_huKaiXuan\github\shopOrderTest\test\com\erhu1999\shopordertest\version006" />
-    </key>
   </component>
-  <component name="RunManager" selected="JUnit.Version017Test0032.testOf0032Threads">
+  <component name="RunManager" selected="JUnit.Version017Test0032">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -463,13 +472,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -686,15 +697,15 @@
       <item itemvalue="JUnit.Version017Test0032" />
       <item itemvalue="JUnit.Version001Test" />
       <item itemvalue="JUnit.Version002Test" />
-      <item itemvalue="Tomcat Server.Unnamed" />
       <item itemvalue="JUnit.Version017Test0032.testOf0032Threads" />
+      <item itemvalue="Tomcat Server.Unnamed" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Version017Test0032" />
         <item itemvalue="JUnit.Version017Test0032.testOf0032Threads" />
         <item itemvalue="JUnit.Version002Test" />
         <item itemvalue="JUnit.Version001Test" />
-        <item itemvalue="JUnit.Version017Test0032" />
         <item itemvalue="JUnit.Version016Test0032" />
       </list>
     </recent_temporary>
@@ -781,8 +792,17 @@
       <workItem from="1538711779347" duration="12534000" />
       <workItem from="1623112478391" duration="2443000" />
       <workItem from="1623200124417" duration="270000" />
-      <workItem from="1623286326762" duration="1055000" />
+      <workItem from="1623286326762" duration="1331000" />
+      <workItem from="1624068341388" duration="5774000" />
     </task>
+    <task id="LOCAL-00001" summary="增加gitignore文件">
+      <created>1623287407686</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1623287407686</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -897,6 +917,48 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="fca8e235-7c41-4ef5-8816-058afc1c0e4b">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="fca8e235-7c41-4ef5-8816-058afc1c0e4b" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="增加gitignore文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加gitignore文件" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -904,6 +966,16 @@
           <url>file://$PROJECT_DIR$/test/com/erhu1999/shopordertest/version001/Version001Test.java</url>
           <line>36</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java/com/erhu1999/shopordertest/version017/Version017StringId.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java/com/erhu1999/shopordertest/version017/Version017StringId.java</url>
+          <line>131</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
